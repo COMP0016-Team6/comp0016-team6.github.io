@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Page title -->
+<title>UCL-GOSH Team6 Requirements</title>
+
+<!-- Meta -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Favicon -->
+<link rel="shortcut icon" href="img/favicon.png">
+
+<!-- Style -->
+<link rel="stylesheet" href="css/theme.css">
+
+</head>
+<body>
+
+<!-- Preloader -->
+<div id="preloader">
+<div class="loader"></div>
+</div>
+<!-- /Preloader -->
+
+<!-- Header -->
+<header id="home" class="header">
+
+<!-- Navigation -->
+<nav id="navigation" class="navbar affix">
+
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-12">
+
+				<!-- Navigation Header -->
+				<div class="navbar-header">
+
+					<!-- Toggle Button -->
+					<button type="button"
+							class="navbar-toggle collapsed"
+							data-toggle="collapse"
+							data-target="#main-menu"
+							aria-expanded="false"
+							aria-controls="main-menu">
+
+						<span class="sr-only">Toggle Navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+
+					</button>
+					<!-- /Toggle Button -->
+
+					<!-- Brand -->
+					<a href="#" class="brand">
+
+						<!-- Logo Big -->
+						<img src="img/brand/NHS.png" style="width:80px;" class="logo-big" alt="">
+						<!-- /Logo Big -->
+
+					</a>
+					<!-- /Brand -->
+
+				</div>
+				<!-- /Navigation Header -->
+
+				<!-- Navigation -->
+				<div id="main-menu" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a href="home.html">Home</a>
+							<ul class="dropdown-menu">
+								<li><a href="home.html#about">Abstract</a></li>
+								<li><a href="home.html#about">Motivation</a></li>
+								<li><a href="home.html#about">Solution</a></li>
+								<li><a href="home.html#contents">Protofolio Contents</a></li>
+								<li><a href="home.html#tech-stack">Tech Stack</a></li>
+								<li><a href="home.html#best-features">Best Features</a></li>
+								<li><a href="home.html#team-members">Team Members</a></li>
+							</ul>
+						</li>
+
+						<li class="dropdown">
+							<a href="requirements.html" class="dropdown-toggle">Requirements</a>
+							<ul class="dropdown-menu">
+                                <li><a href="requirements.html#user-interview">User Interview</a></li>
+                                <li><a href="requirements.html#persona">Persona</a></li>
+								<li><a href="requirements.html#moscow-requirements">MoSCoW Requirements</a></li>
+							</ul>
+						</li>
+
+						<li class="dropdown">
+							<a href="research.html" class="dropdown-toggle">Research</a>
+							<ul class="dropdown-menu">
+								<li><a href="research.html#primary-research">Primary Research</a></li>
+								<li><a href="research.html#industrial-research">Industrial Research</a></li>
+							</ul>
+						</li>
+
+						<li class="dropdown">
+							<a href="algorithms.html" class="dropdown-toggle">Algorithms</a>
+							<ul class="dropdown-menu">
+								
+							</ul>
+						</li>
+
+						<li class="dropdown">
+							<a href="design.html" class="dropdown-toggle">Design</a>
+							<ul class="dropdown-menu">
+								<li><a href="design.html#hci-sketching">HCI-Sketching</a></li>
+                                <li><a href="design.html#prototype">Prototype</a></li>
+                                <li><a href="design.html#prototype-evaluation">Prototype Evaluation</a></li>
+                                <li><a href="design.html#improved-prototype">Improved Prototype</a></li>
+                                <li><a href="design.html#final-prototype">Final Prototype</a></li>
+							</ul>
+						</li>
+
+						<li class="dropdown">
+							<a href="testing.html" class="dropdown-toggle">Testing</a>
+							<ul class="dropdown-menu">
+								
+							</ul>
+						</li>
+
+						<li class="dropdown">
+							<a href="evaluation.html" class="dropdown-toggle">Evaluation</a>
+							<ul class="dropdown-menu">
+								
+							</ul>
+						</li>
+
+						<li class="dropdown">
+							<a href="appendices.html" class="dropdown-toggle">Appendices</a>
+							<ul class="dropdown-menu">
+						
+							</ul>
+						</li>
+
+						<li class="dropdown">
+							<a href="https://comp0016-team6.github.io/Dev-Blog/" class="dropdown-toggle">Dev Blog</a>
+						</li>
+					</ul>
+				</div>
+				<!-- /Navigation -->
+
+			</div>
+		</div>
+
+	</div>
+</nav>
+<!-- /Navigation -->
+
+</header>
+<!-- /Header -->
+
+<!-- Section: Page Header -->
+<section class="section-page-header">
+    <div class="container">
+        <div class="row">
+
+            <!-- Page Title -->
+            <div class="col-md-8">
+                <h1 class="title">Requirements</h1>
+            </div>
+            <!-- /Page Title -->
+
+            <!-- Breadcrumbs -->
+            <div class="col-md-4">
+                <ul class="breadcrumb">
+                    <li><i class="fa fa-fw fa-home"></i> <a href="home.html">Home</a></li>
+                    <li>Requirements</li>
+                </ul>
+            </div>
+            <!-- /Breadcrumbs -->
+
+        </div>
+    </div>
+</section>
+<!-- /Section: Page Header -->
+
+<!-- Main -->
+<main class="main-container">
+    <div class="container">
+        <div class="row">
+
+            <!-- Blog Sidebar -->
+            <div class="col-md-3">
+
+                <!-- Widget: Menu -->
+                <div class="widget">
+
+                    <h4 class="title">Menu</h4>
+                    <ul class="sidebar-menu">
+                        <li><a href="#user-interview" class="smooth-scroll">User Interview</a></li>
+                        <li><a href="#persona" class="smooth-scroll">Persona</a></li>
+                        <li><a href="#moscow-requirements" class="smooth-scroll">MoSCoW Requirements</a></li>
+                    </ul>
+
+                </div>
+                <!-- /Widget: Menu -->
+
+            </div>
+
+            <!-- Blog Content -->
+            <div class="col-md-9">
+
+                <!-- Posts List -->
+                <div class="posts-list">
+
+                    <section id="user-interview" class="section-small">
+                        <!-- Single Post With Image -->
+                        <article class="blog-post">
+    
+                            <!-- Post Title -->
+                            <h2 class="title">User Interview</h2>
+                            <!-- /Post Title -->
+    
+                            <!-- Post Content -->
+                            <div class="content">
+                                <p>
+                                    Semi-structured interview was conducted to gather user requirements, which allowed to ask more detailed questions based on the given response.
+                                </p>
+                                <p>
+                                    Q: What do you want to monitor?
+                                </p>
+                                <p class="text-theme">
+                                    A: I want to monitor the total volume that is being delivered at specific time spots over the day. 
+                                    I also want to know the rates at which the food or medications are being given. 
+                                    In addition, I want a graph showing the relationship between the prescribed feed and the actual given feed on the patient's dashboard. 
+                                    Monitoring the volume and the rate will give insights on how the patient is tolerating the medications, 
+                                    how often the rates are adjusted, which will help to understand any problems and readjust the treatment plan.
+                                </p>
+                                <p>
+                                    Q: Does GOSH have a system for hosting this application?
+                                </p>
+                                <p class="text-theme">
+                                    A: Yes, MyGOSH. We can focus on making the application web-based, 
+                                    keeping in mind the growing interest in on-device applications, to achieve the highest levels of security.
+                                </p>
+                                <p>
+                                    Q: Would you want to have some alerting systems in place? 
+                                </p>
+                                <p class="text-theme">
+                                    A: Sounds like a good idea, but the practicalities should be discussed further. 
+                                    It might be useful to have algorithms that will analyse the data patterns and raise alerts if something doesn’t look right. 
+                                    It will be appreciated If the system could provide any actionable insights based on historical trends of the data.
+                                </p>
+                                <p>
+                                    Q: How long would the data be stored in the database?
+                                </p>
+                                <p class="text-theme">
+                                    A: I would say it will be cumulative over time. You don't need a short fixed period of time, 
+                                    and I would also suggest that the longer period of time you're collecting the data, the more meaningful it becomes.
+                                </p>
+                            </div>
+                            <!-- /Post Content -->
+    
+                        </article>
+                    </section>
+
+                    <section id="persona" class="section-small">
+                        <!-- Single Post With Image -->
+                        <article class="blog-post">
+    
+                            <!-- Post Title -->
+                            <h2 class="title">Persona</h2>
+                            <!-- /Post Title -->
+    
+                            <!-- Post Content -->
+                            <div class="content">
+                                <p>
+                                    After having clearer requirements of the system and with our newly learned HCI material, 
+                                    we created personas that will be using the application and the scenarios within which it will be used.  
+                                </p>
+                            </div>
+                            <!-- /Post Content -->
+    
+                            <!-- Post Image -->
+                            <div class="image">
+                                <a href="img/portfolio/requirements/persona.png" class="image-popup">
+                                    <div class="gallery-image">
+                                        <img src="img/portfolio/requirements/persona.png">
+                                    </div>
+                                </a>
+                                <p>
+                                    Alexa is a Great Ormond Street Hospital for Children (GOSH) clinician, 
+                                    who wants to get insights on the treatment of her patients, specifically from infusion pumps. 
+                                    She believes monitoring the rates and volumes of delivered nutrients could give insights into the patient’s body system.
+                                    This will help to assess the efficiency of treatment and readjust the current healing plan.
+                                    An online dashboard is needed to visualise the patient data. Data security and reliability are her top priorities. 
+                                    The dashboard will uncover long term trends and make data analysis easier. 
+                                </p>
+                            </div>
+                            <!-- /Post Image -->
+    
+                        </article>
+                    </section>
+
+                    <section id="moscow-requirements" class="section-small">
+                    <!-- Single Post With Image -->
+                    <article class="blog-post">
+
+                        <!-- Post Title -->
+                        <h2 class="title">MoSCoW Requirements</h2>
+                        <!-- /Post Title -->
+
+                        <!-- Post Content -->
+                        <div class="content">
+                            <p>
+                                After we spent some time thinking about many different edge-cases, we scheduled a meeting with the client and have it confirmed. 
+                            </p>
+                            <p>
+                                Some requirements were moved from one section to the other, but the requirements were largely correct. 
+                                The finalised MoSCoW requirements are as follows:  
+                            </p>
+                        </div>
+                        <!-- /Post Content -->
+
+                        <!-- Post Image -->
+                        <div class="image">
+                            <a href="img/portfolio/requirements/moscow.png" class="image-popup">
+                                <div class="gallery-image">
+                                    <img src="img/portfolio/requirements/moscow.png">
+                                </div>
+                            </a>
+                        </div>
+                        <!-- /Post Image -->
+
+                    </article>
+                    </section>
+
+                </div>
+
+            </div>
+            <!-- /Blog Content -->
+
+        </div>
+
+    </div>
+
+</main>
+<!-- /Main -->
+
+<!-- Footer -->
+<footer class="footer section-small">
+    <div class="container">
+        <div class="row">
+    
+            <!-- Footer Column -->
+            <div class="col-md-3 col-xs-6 footer-col">
+    
+                <!-- Footer Logo -->
+                <div class="logo">
+                    <img src="img/brand/NHS.png" style="width: 70px;" alt="">
+                </div>
+                <!-- /Footer Logo -->
+    
+                <!-- Footer Text -->
+                <p class="text">
+                    Group Portofolio Webpage about COMP0016 Team 6 UCL-GOSH Data Interchange for Sensors Classifications
+                </p>
+                <!-- /Footer Text -->
+    
+                <hr>
+    
+                <!-- Copyright -->
+			    <p class="copyright">
+				    Copyright &copy; 2020-2021 
+				    <a href="https://www.gosh.nhs.uk"><strong>GOSH</strong></a>, 
+				    <a href="https://github.com/d-batayev"><strong>Daulet Batayev</strong></a>, 
+				    <a href="https://github.com/henryo01230o"><strong>Henry Ching</strong></a>, 
+				    <a href="https://github.com/akalisvm"><strong>Tianang Chen</strong></a>
+			    </p>
+			    <!-- /Copyright -->
+    
+            </div>
+            <!-- /Footer Column -->		
+    
+            <!-- Footer Column -->
+            <div class="col-md-2 col-xs-6 footer-col">
+    
+                <h3 class="title">Site <span class="text-theme">Menu</span></h3>
+    
+                <!-- Footer Menu -->
+                <ul class="menu">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="requirements.html">Requirements</a></li>
+                    <li><a href="research.html">Reseach</a></li>
+                    <li><a href="algorithms.html">Algorithms</a></li>
+                    <li><a href="design.html">Design</a></li>
+                    <li><a href="testing.html">Testing</a></li>
+                    <li><a href="evaluation.html">Evaluation</a></li>
+                    <li><a href="appendices.html">Appendices</a></li>
+                    <li><a href="https://comp0016-team6.github.io/Dev-Blog/">Dev Blog</a></li>
+                </ul>
+                <!-- /Footer Menu -->
+    
+            </div>
+            <!-- /Footer Column -->
+    
+            <!-- Footer Column -->
+			<div class="col-md-4 col-xs-6 footer-col">
+	
+				<h3 class="title">Our <span class="text-theme">Partners</span></h3>
+				<a href="https://www.gosh.nhs.uk">
+					<img src="img/brand/GOSHLOGO.png" style="width: 250px;">
+				</a>
+				<a href="https://ucl.ac.uk">
+					<img src="img/brand/UCL.png" style="width: 300px;">
+				</a>
+			</div>
+			<!-- /Footer Column -->
+	
+			<!-- Footer Column -->
+			<div class="col-md-3 col-xs-6 footer-col">
+	
+				<h3 class="title">Source <span class="text-theme">Code</span></h3>
+	
+				<a href="https://github.com/COMP0016-Team6/NHS-Patient-Dashboard">
+					<img style="width: 300px;" src="img/brand/github.jpg"></img>
+				</a>
+	
+			</div>
+			<!-- /Footer Column -->
+        </div>
+    </div>
+    </footer>
+    <!-- /Footer -->
+    
+    <!-- Scroll To Top -->
+    <div id="scroll-to-top" class="scroll-to-top">
+    <i class="icon fa fa-angle-up"></i>
+    </div>
+    <!-- /Scroll To Top -->
+    
+    <!-- SCRIPTS -->
+    <script src="js/jquery-2.2.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/jquery.appear.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/general.js"></script>
+    <!-- /SCRIPTS -->
+    
+    <div class="styleswitcher-button vertical-middle"><i class="fa fa-gear"></i></div>
+    </div>
+    
+    <link rel="stylesheet" type="text/css" href="demo/styleswitcher.css" property="">
+    <script src="demo/styleswitcher.js"></script>
+    <!-- /Styleswitcher -->
+    
+    </body>
+    </html>
