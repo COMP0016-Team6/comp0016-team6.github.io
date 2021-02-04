@@ -127,6 +127,13 @@
 						</li>
 
 						<li class="dropdown">
+							<a href="implementation.html" class="dropdown-toggle">Impl.</a>
+							<ul class="dropdown-menu">
+								
+							</ul>
+						</li>
+
+						<li class="dropdown">
 							<a href="testing.html" class="dropdown-toggle">Testing</a>
 							<ul class="dropdown-menu">
 								
@@ -143,12 +150,8 @@
 						<li class="dropdown">
 							<a href="appendices.html" class="dropdown-toggle">Appendices</a>
 							<ul class="dropdown-menu">
-						
+								<li><a href="appendices.html#supporting-docs">Supporting Docs</a></li>
 							</ul>
-						</li>
-
-						<li class="dropdown">
-							<a href="https://comp0016-team6.github.io/Dev-Blog/" class="dropdown-toggle">Dev Blog</a>
 						</li>
 					</ul>
 				</div>
@@ -219,7 +222,7 @@
             <div class="col-md-9">
 
                 <!-- Posts List -->
-                <div class="posts-list">
+                <div class="posts-list project-information">
 
                     <section id="motivation" class="section-small">
                         <!-- Single Post With Image -->
@@ -246,8 +249,6 @@
     
                         </article>
                     </section>
-
-                    <hr/>
 
                     <section id="solution" class="section-small">
                         <!-- Single Post With Image -->
@@ -276,8 +277,6 @@
     
                         </article>
                     </section>
-
-                    <hr/>
 
                     <section id="user-interview" class="section-small">
                         <!-- Single Post With Image -->
@@ -330,8 +329,6 @@
                         </article>
                     </section>
 
-                    <hr/>
-
                     <section id="persona" class="section-small">
                         <!-- Single Post With Image -->
                         <article>
@@ -370,8 +367,6 @@
                         </article>
                     </section>
 
-                    <hr/>
-
                     <section id="moscow-requirements" class="section-small">
                         <!-- Single Post With Image -->
                         <article>
@@ -392,16 +387,100 @@
                             </div>
                             <!-- /Post Content -->
 
-                            <!-- Post Image -->
-                            <div class="image">
-                                <a href="img/portfolio/requirements/moscow.png" class="image-popup">
-                                    <div class="gallery-image">
-                                        <img src="img/portfolio/requirements/moscow.png">
-                                    </div>
-                                </a>
-                            </div>
-                            <!-- /Post Image -->
+                            <div class="row mt">
 
+                                <!-- Panels -->
+                                <div>
+                    
+                                    <div class="panel-group" id="accordion">
+                    
+                                        <div class="panel panel-theme">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a class="" data-toggle="collapse" data-parent="#accordion" href="#moscow-must-have">
+                                                        <strong>Must Have:</strong>
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="moscow-must-have" class="panel-collapse collapse in">
+                                                <div class="panel-body">
+                                                    <ul>
+                                                        <li>Monitor and reliably read live date from infusion pump.</li>
+                                                        <ii>Dashboard for visualising the patient infusion pump data over time.</ii>
+                                                        <li>Types of graphs to choose from on the dashboard, i.e., rate over time, volume over time, etc.</li>
+                                                        <li>Target feed and Actual feed comparison on the graph.</li>
+                                                        <li>FHIR Standards to ensure the secure transfer of data over a network.</li>
+                                                        <li>Secure and Reliable Authorisation System.</li>
+                                                        <li>Basic info page of the patient.</li>
+                                                        <li>Data will be stored permanently.</li>
+                                                        <li>Make changes to the patient's treatment plan (Clinician Only).</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="panel panel-theme">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#moscow-should-have">
+                                                        <strong>Should Have:</strong>
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="moscow-should-have" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <ul>
+                                                        <li>A list of patients who are being treated by the clinician (Clinician Only).</li>
+                                                        <li>Notifications/Alerts when the feed is abnormally high/low.</li>
+                                                        <li>Different visualising methods to choose from (Linear Graph vs Bar Graph vs something we have on the overview page).</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="panel panel-theme">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#moscow-could-have">
+                                                        <strong>Could Have:</strong>
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="moscow-could-have" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <ul>
+                                                        <li>Algorithm to make predictions based on historical date OR Deduce patterns from historical data.</li>
+                                                        <li>Patients reporting the reasons for large gaps between target and actual feed (Such as "Exercised between 1pm and 2pm", "Low appetite because of XYZ").</li>
+                                                        <li>
+                                                            Clinicians could update the records of the patients, example: If a patient did handle Treatment X too well, we can add it to their info page/database,
+                                                            so that if the clinicians change, they have some information to work with.
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="panel panel-theme">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#moscow-wont-have">
+                                                        <strong>Won't Have:</strong>
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="moscow-wont-have" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <ul>
+                                                        <li>Registration Page - only authorized people will use the app.</li>
+                                                        <li>Data Removal - date becomes more important over time.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                    </div>
+                                </div>
+                                <!-- /Panels -->
                         </article>
                     </section>
 
@@ -459,19 +538,19 @@
                 <h3 class="title">Site <span class="text-theme">Menu</span></h3>
     
                 <!-- Footer Menu -->
-                <ul class="menu">
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="requirements.html">Requirements</a></li>
-                    <li><a href="research.html">Reseach</a></li>
-                    <li><a href="algorithms.html">Algorithms</a></li>
-                    <li><a href="hci.html">HCI</a></li>
-                    <li><a href="design.html">Design</a></li>
-                    <li><a href="testing.html">Testing</a></li>
-                    <li><a href="evaluation.html">Evaluation</a></li>
-                    <li><a href="appendices.html">Appendices</a></li>
-                    <li><a href="https://comp0016-team6.github.io/Dev-Blog/">Dev Blog</a></li>
-                </ul>
-                <!-- /Footer Menu -->
+				<ul class="menu">
+					<li><a href="home.html">Home</a></li>
+					<li><a href="requirements.html">Requirements</a></li>
+					<li><a href="research.html">Reseach</a></li>
+					<li><a href="algorithms.html">Algorithms</a></li>
+					<li><a href="hci.html">HCI</a></li>
+					<li><a href="design.html">Design</a></li>
+					<li><a href="implementation.html">Implementation</a></li>
+					<li><a href="testing.html">Testing</a></li>
+					<li><a href="evaluation.html">Evaluation</a></li>
+					<li><a href="appendices.html">Appendices</a></li>
+				</ul>
+				<!-- /Footer Menu -->
     
             </div>
             <!-- /Footer Column -->
