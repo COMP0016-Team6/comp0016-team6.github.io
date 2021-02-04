@@ -74,12 +74,10 @@
 						<li class="dropdown">
 							<a href="home.html">Home</a>
 							<ul class="dropdown-menu">
-								<li><a href="home.html#about">Abstract</a></li>
-								<li><a href="home.html#about">Motivation</a></li>
-								<li><a href="home.html#about">Solution</a></li>
+								<li><a href="home.html#abstract">Abstract</a></li>
 								<li><a href="home.html#contents"> Portofolio Contents</a></li>
-								<li><a href="home.html#tech-stack">Tech Stack</a></li>
 								<li><a href="home.html#best-features">Best Features</a></li>
+								<li><a href="home.html#demo-video">Demo Video</a></li>
 								<li><a href="home.html#team-members">Team Members</a></li>
 							</ul>
 						</li>
@@ -87,6 +85,8 @@
 						<li class="dropdown">
 							<a href="requirements.html" class="dropdown-toggle">Requirements</a>
 							<ul class="dropdown-menu">
+								<li><a href="requirements.html#motivation">Motivation</a></li>
+								<li><a href="requirements.html#solution">Solution</a></li>
                                 <li><a href="requirements.html#user-interview">User Interview</a></li>
                                 <li><a href="requirements.html#persona">Persona</a></li>
 								<li><a href="requirements.html#moscow-requirements">MoSCoW Requirements</a></li>
@@ -109,13 +109,20 @@
 						</li>
 
 						<li class="dropdown">
+							<a href="hci.html" class="dropdown-toggle">HCI</a>
+							<ul class="dropdown-menu">
+								<li><a href="hci.html#hci-sketching">HCI-Sketching</a></li>
+                                <li><a href="hci.html#prototype">Prototype</a></li>
+                                <li><a href="hci.html#prototype-evaluation">Prototype Evaluation</a></li>
+                                <li><a href="hci.html#improved-prototype">Improved Prototype</a></li>
+                                <li><a href="hci.html#final-prototype">Final Prototype</a></li>
+							</ul>
+						</li>
+
+						<li class="dropdown">
 							<a href="design.html" class="dropdown-toggle">Design</a>
 							<ul class="dropdown-menu">
-								<li><a href="design.html#hci-sketching">HCI-Sketching</a></li>
-                                <li><a href="design.html#prototype">Prototype</a></li>
-                                <li><a href="design.html#prototype-evaluation">Prototype Evaluation</a></li>
-                                <li><a href="design.html#improved-prototype">Improved Prototype</a></li>
-                                <li><a href="design.html#final-prototype">Final Prototype</a></li>
+								
 							</ul>
 						</li>
 
@@ -146,7 +153,6 @@
 					</ul>
 				</div>
 				<!-- /Navigation -->
-
 			</div>
 		</div>
 
@@ -191,15 +197,15 @@
 <!-- Main -->
 <main class="main-container">
 
-<!-- Section: About -->
-<section id="about" class="section">
+<!-- Section: Abstract -->
+<section id="abstract" class="section">
 	<div class="container">
 
 		<div class="row">
 			
 			<!-- Feature Block -->
-			<div class="col-sm-4 feature fadeIn wow" data-wow-duration="1.3s">
-				<div class="h3 title">Abstract</div>
+			<div class="fadeIn wow" data-wow-duration="1.3s">
+				<div class="h2 title">Abstract</div>
 				<p class="description">
 					Our client is <a href="https://www.gosh.nhs.uk/">Great Ormond Street Hospital (GOSH)</a>, an international centre of excellence in child healthcare.
 					Together with their research partner, the UCL Great Ormond Street Institute of Child Health, 
@@ -213,44 +219,11 @@
 			</div>
 			<!-- /Feature Block -->
 
-			<!-- Feature Block -->
-			<div class="col-sm-4 feature fadeIn wow" data-wow-duration="1.3s" data-wow-delay="0.4s">
-				<div class="h3 title">Motivation</div>
-				<p class="description">
-					At the moment, there is no monitoring system in GOSH which would help clinicians to get insights into patients’ treatment and 
-					see if they are hitting the target amount of feed they are prescribing. When it’s on paper and the information is not digitalised, 
-					you tend to forget the bigger picture and lose crucial information on how effective is the current treatment plan.
-				</p>
-				<p class="description">
-					Having a dashboard with customisable metric graphs of infusion pump data would help to evaluate the treatment plan of 
-					the patients by analysing the data over time with different metrics (such as rate over time, volume over time, etc.), 
-					get insights into the patients body (which plan doesn’t seem to work and which does), and makes the life of the clinician easier.
-				</p>
-			</div>
-			<!-- /Feature Block -->
-
-			<!-- Feature Block -->
-			<div class="col-sm-4 feature fadeIn wow" data-wow-duration="1.3s" data-wow-delay="0.8s">
-				<div class="h3 title">Solution</div>
-				<p class="description">
-					FHIR-compliant data visualisation tool from Infusion Pumps in a form of a web application. 
-					The authorised users will be able to log in the system to visualise the dashboards of the patients they are treating.
-				</p>
-				<p class="description">
-					Graphs and Charts must be customisable, having several different metrics, and with the ability to view the prescribed vs. 
-					actual rates of feed the patient is receiving.
-				</p>
-				<p class="description">
-					There must be a high level of data security since we are dealing with medical information and clinicians/parents 
-					will only see the dashboards of patients they were assigned.
-				</p>
-			</div>
-			<!-- /Feature Block -->
 
 		</div>
 	</div>
 </section>
-<!-- /Section: About -->
+<!-- /Section: Abstract -->
 
 <!-- Section: Portofolio Contents -->
 <section id="contents" class="section-small bg-light-gray">
@@ -309,12 +282,12 @@
 			</div>
 
 			<div class="col-md-4 col-sm-6 fadeIn wow" data-wow-duration="1.3s" data-wow-delay="0.6s">
-				<a href="design.html" class="project-item">
+				<a href="hci.html" class="project-item">
 					<div class="gallery-image">
-						<img src="img/portfolio/home/ui-design.png" alt="">
+						<img src="img/portfolio/home/hci.png" alt="">
 					</div>
 					<div class="info">
-						<div class="h4 title">UI Design</div>
+						<div class="h4 title">HCI</div>
 					</div>
 				</a>
 			</div>
@@ -322,10 +295,10 @@
 			<div class="col-md-4 col-sm-6 fadeIn wow" data-wow-duration="1.3s" data-wow-delay="0.8s">
 				<a href="design.html" class="project-item">
 					<div class="gallery-image">
-						<img src="img/portfolio/home/system-design.png" alt="">
+						<img src="img/portfolio/home/design.png" alt="">
 					</div>
 					<div class="info">
-						<div class="h4 title">System Design</div>
+						<div class="h4 title">Design</div>
 					</div>
 				</a>
 			</div>
@@ -380,116 +353,8 @@
 </section>
 <!-- /Section: Portofolio Contents -->
 
-<!-- Section: Tech Stack -->
-<section id="tech-stack" class="section">
-	<div class="container">
-
-		<!-- Section Header -->
-		<div class="row">
-			<div class="col-md-6 col-md-offset-3">
-				<header class="text-center">
-					<h2 class="section-title">Project <span class="text-theme">Tech Stack</span></h2>
-				</header>
-			</div>
-		</div>
-		<!-- /Section Header -->
-
-		<!-- Section Content -->
-		<div class="row section-content zoomIn wow">
-
-			<!-- Feature Block -->
-			<div class="col-md-4 col-sm-6 more-feature">
-				<div class="media">
-					<div class="media-body">
-						<h3 class="title">HTML5 & CSS3</h3>
-						<p class="description">
-							It is a long established fact that a reader will be distracted by the readable content
-							of a page when looking at its layout.
-						</p>
-					</div>
-				</div>
-			</div>
-			<!-- /Feature Block -->
-
-			<!-- Feature Block -->
-			<div class="col-md-4 col-sm-6 more-feature">
-				<div class="media">
-					<div class="media-body">
-						<h3 class="title">React</h3>
-						<p class="description">
-							It is a long established fact that a reader will be distracted by the readable content
-							of a page when looking at its layout.
-						</p>
-					</div>
-				</div>
-			</div>
-			<!-- /Feature Block -->
-
-			<!-- Feature Block -->
-			<div class="col-md-4 col-sm-6 more-feature">
-				<div class="media">
-					<div class="media-body">
-						<h3 class="title">PostgreSQL</h3>
-						<p class="description">
-							It is a long established fact that a reader will be distracted by the readable content
-							of a page when looking at its layout.
-						</p>
-					</div>
-				</div>
-			</div>
-			<!-- /Feature Block -->
-
-			<!-- Feature Block -->
-			<div class="col-md-4 col-sm-6 more-feature">
-				<div class="media">
-					<div class="media-body">
-						<h3 class="title">Django</h3>
-						<p class="description">
-							It is a long established fact that a reader will be distracted by the readable content
-							of a page when looking at its layout.
-						</p>
-					</div>
-				</div>
-			</div>
-			<!-- /Feature Block -->
-
-			<!-- Feature Block -->
-			<div class="col-md-4 col-sm-6 more-feature">
-				<div class="media">
-					<div class="media-body">
-						<h3 class="title">NodeJS</h3>
-						<p class="description">
-							It is a long established fact that a reader will be distracted by the readable content
-							of a page when looking at its layout.
-						</p>
-					</div>
-				</div>
-			</div>
-			<!-- /Feature Block -->
-
-			<!-- Feature Block -->
-			<div class="col-md-4 col-sm-6 more-feature">
-				<div class="media">
-					<div class="media-body">
-						<h3 class="title">Love & Coffee</h3>
-						<p class="description">
-							It is a long established fact that a reader will be distracted by the readable content
-							of a page when looking at its layout.
-						</p>
-					</div>
-				</div>
-			</div>
-			<!-- /Feature Block -->
-
-		</div>
-		<!-- /Section Content -->
-
-	</div>
-</section>
-<!-- /Section: Tech Stack -->
-
 <!-- Section: Best Features -->
-<section id="best-features" class="section bg-light-gray">
+<section id="best-features" class="section">
 	<div class="container">
 
 		<!-- Section Header -->
@@ -548,6 +413,30 @@
 	</div>
 </section>
 <!-- /Section: Best Features -->
+
+<!-- Section: Demo Video -->
+<section id="demo-video" class="section bg-light-gray">
+	<div class="container">
+
+		<!-- Section Header -->
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<header class="text-center">
+					<h2 class="section-title">Demo <span class="text-theme">Video</span></h2>
+				</header>
+			</div>
+		</div>
+		<!-- /Section Header -->
+
+		<div class="row section-content">
+			<iframe  width="1200" height="675" src ="https://www.youtube.com/embed/CUw0f_ae0BM" frameborder="0" allowfullscreen>
+				<p>Your browser does not support iframes.</p>
+			</iframe>
+		</div>
+
+	</div>
+</section>
+<!-- /Section: Demo Video -->
 
 <!-- Section: Team Members -->
 <section id="team-members" class="section-small">
@@ -677,7 +566,7 @@
 	
 				<!-- Footer Text -->
 				<p class="text">
-					Group Portofolio Webpage about COMP0016 Team 6 UCL-GOSH Data Interchange for Sensors Classifications
+					Group Portofolio Website about COMP0016 Team 6 UCL-GOSH Data Interchange for Sensors Classifications
 				</p>
 				<!-- /Footer Text -->
 	
@@ -688,8 +577,9 @@
 					Copyright &copy; 2020-2021 
 					<a href="https://www.gosh.nhs.uk"><strong>GOSH</strong></a>, 
 					<a href="https://github.com/d-batayev"><strong>Daulet Batayev</strong></a>, 
-					<a href="https://github.com/henryo01230o"><strong>Henry Ching</strong></a>, 
+					<a href="https://github.com/henryo01230o"><strong>Henry Ching</strong></a> and 
 					<a href="https://github.com/akalisvm"><strong>Tianang Chen</strong></a>
+					- All rights reserved.
 				</p>
 				<!-- /Copyright -->
 	
@@ -707,6 +597,7 @@
 					<li><a href="requirements.html">Requirements</a></li>
 					<li><a href="research.html">Reseach</a></li>
 					<li><a href="algorithms.html">Algorithms</a></li>
+					<li><a href="hci.html">HCI</a></li>
 					<li><a href="design.html">Design</a></li>
 					<li><a href="testing.html">Testing</a></li>
 					<li><a href="evaluation.html">Evaluation</a></li>
@@ -766,9 +657,6 @@
 <script src="js/jquery.animateNumber.min.js"></script>
 <script src="js/general.js"></script>
 <!-- /SCRIPTS -->
-
-<div class="styleswitcher-button vertical-middle"><i class="fa fa-gear"></i></div>
-</div>
 
 <link rel="stylesheet" type="text/css" href="demo/styleswitcher.css" property="">
 <script src="demo/styleswitcher.js"></script>
