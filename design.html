@@ -104,13 +104,6 @@
 						</li>
 
 						<li class="dropdown">
-							<a href="algorithms.html" class="dropdown-toggle">Algorithms</a>
-							<ul class="dropdown-menu">
-								
-							</ul>
-						</li>
-
-						<li class="dropdown">
 							<a href="hci.html" class="dropdown-toggle">HCI</a>
 							<ul class="dropdown-menu">
 								<li><a href="hci.html#hci-sketching">HCI-Sketching</a></li>
@@ -124,14 +117,9 @@
 						<li class="dropdown">
 							<a href="design.html" class="dropdown-toggle">Design</a>
 							<ul class="dropdown-menu">
-								
-							</ul>
-						</li>
-
-						<li class="dropdown">
-							<a href="implementation.html" class="dropdown-toggle">Impl.</a>
-							<ul class="dropdown-menu">
-								
+								<li><a href="design.html#tech-stack">Teck Stack</a></li>
+								<li><a href="design.html#system-architecture-diagram">System Architecture Diagram</a></li>
+								<li><a href="design.html#data-storage-er-diagram">Data Storage ER Diagram</a></li>
 							</ul>
 						</li>
 
@@ -207,7 +195,9 @@
 
 						<h4 class="title">Menu</h4>
 						<ul class="sidebar-menu">
-							
+							<li><a href="#tech-stack" class="smooth-scroll">Tech Stack</a></li>
+							<li><a href="#system-architecture-diagram" class="smooth-scroll">System Architecture Diagram</a></li>
+							<li><a href="#data-storage-er-diagram" class="smooth-scroll">Data Storage ER Diagram</a></li>
 						</ul>
 	
 					</div>
@@ -220,8 +210,191 @@
             <div class="col-md-9">
 
                 <!-- Posts List -->
-                <div class="posts-list">        
+                <div class="posts-list">  
 
+					<section id="tech-stack" class="section-small">
+
+						<article>
+							<div class="project-information">
+								<!-- Post Title -->
+								<h2 class="title">Tech Stack</h2>
+								<!-- /Post Title -->
+							</div>
+
+							<!-- Post Content -->
+							<div class="content">
+								<p>
+									To choose the tech stack, we considered our previous experiences and preferences, 
+									carefully evaluating the suitability of this project by constantly referring to the MoSCoW requirements. 
+									It was important for us that the language or technology had good documentation and had many available open-source resources that we can benefit from.
+								</p>
+							</div>
+							<!-- /Post Content -->
+
+							<h3 class="title">Frontend: React & Ant Design</h3>
+
+							<div class="image">
+								<div class="row">
+									<div class="col-md-4">
+										<!-- Post Image -->
+										<a href="img/brand/ReactLOGO.png" class="image-popup">
+											<div class="gallery-image">
+												<img src="img/brand/ReactLOGO.png">
+											</div>
+										</a>
+										<!-- /Post Image -->
+									</div>
+									<div class="col-8">
+										<p>
+											React is a stable, efficient, beginner-friendly JavaScript framework, which makes creating a user-friendly, scalable, and dynamically changing interface simple. 
+											There are a ton of useful libraries and resources available, and the documentation is very well written. 
+											Since React is modern and popular, there will be no problems for incoming developers to maintain the codebase.
+											In addition, React uses JSX syntax compared to HTML with Vue so it is easier to understand the function of a particular component.
+											This means React does have greater expandability and scalability since reusing JSX is easier as to HTML.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="image">
+								<div class="row">
+									<div class="col-md-8">
+										<p>
+											In order to optimize the user interface design style, we decided to use Ant Design which is a React UI library that contains a set of high-quality components and demos for building rich, interactive user interfaces. 
+											Ant Design is an enterprise-class UI designed for web applications and it also provides us with themes to customize our web application in every detail. 
+											With help of this UI design library, we can develop a very clean and polished UI for our users.
+										</p>
+									</div>
+									<div class="col-md-4">
+										<!-- Post Image -->
+										<a href="img/brand/Ant Design.png" class="image-popup">
+											<div class="gallery-image">
+												<img src="img/brand/Ant Design.png">
+											</div>
+										</a>
+										<!-- /Post Image -->
+									</div>
+								</div>
+							</div>
+
+							<h3 class="title">Backend: Node.js</h3>
+
+							<div class="image">
+								<div class="row">
+									<div class="col-md-4">
+										<!-- Post Image -->
+										<a href="img/brand/nodejs1.png" class="image-popup">
+											<div class="gallery-image">
+												<img src="img/brand/nodejs1.png">
+											</div>
+										</a>
+										<!-- /Post Image -->
+									</div>
+									<div class="col-md-8">
+										<p>
+											Our backend is being developed with Node.js. With the fast processing speed and event-driven architecture, 
+											it provides fast synchronization and thus the experience of the application. 
+											It is also a lightweight tool which means our application can be more scalable.  
+										</p>
+									</div>
+									<p>
+										We have also considered using Django on the backend. 
+										However, we went with NodeJS as it aids the simplicity by having both the back end and front end in JavaScript. 
+										Also, though Python and JavaScript are both single-threaded, NodeJS has the asynchronous functions, while Django does not. 
+										This makes NodeJS a more efficient and convenient solution. From our previous experience, 
+										NodeJS is relatively quick to get up and running, and choosing it is a wise decision, given the time constraints of the project.
+									</p>
+								</div>
+							</div>
+
+							<h3 class="title">Database: PostgreSQL</h3>
+
+							<div class="image">
+								<div class="row">
+									<div class="col-md-8">
+										<p>
+											For storing and managing the data, we decided to use PostgreSQL DBMS. 
+											This is because we covered relational databases and SQL in detail during Term 1 of this academic year. 
+											We chose PostgreSQL over other relational databases because of many features to protect data integrity and to build fault-tolerant environments in addition to being highly extensible. 
+											For example, it comes with a built-in enhancement SE-PostgreSQL which provides additional access controls. 
+										</p>
+									</div>
+									<div class="col-md-4">
+										<!-- Post Image -->
+										<a href="img/brand/PostgreSQL.png" class="image-popup">
+											<div class="gallery-image">
+												<img src="img/brand/PostgreSQL.png">
+											</div>
+										</a>
+										<!-- /Post Image -->
+									</div>
+								</div>
+							</div>
+							
+						</article>
+
+					</section>
+
+					<section id="system-architecture-diagram" class="section-small">
+
+						<article>
+							<div class="project-information">
+								<!-- Post Title -->
+								<h2 class="title">System Architecture Diagram</h2>
+								<!-- /Post Title -->
+							</div>
+
+							<!-- Post Content -->
+							<div class="content">
+								<p>
+									We have two main types of users, clinicians and patients. They will be making requests and receive responses from the web app. 
+									This can be done by them interacting with the frontend UI, for instance, a clinician can click on a button to change the treatment plan for a patient. 
+									The backend is where the flow of the application is managed and requests will be interpreted. 
+									Then it will interact with the database if data is needed to be stored or retrieved. 
+								</p>
+								<!-- Post Image -->
+								<div class="image">
+									<a href="img/portfolio/design/System Architecture Diagram.png" class="image-popup">
+										<div class="gallery-image">
+											<img src="img/portfolio/design/System Architecture Diagram.png">
+										</div>
+									</a>
+								</div>
+								<!-- /Post Image -->
+							</div>
+							<!-- /Post Content -->
+						</article>
+
+					</section>
+
+					<section id="data-storage-er-diagram" class="section-small">
+						<article>
+							<div class="project-information">
+								<!-- Post Title -->
+								<h2 class="title">Data Storage ER Diagram</h2>
+								<!-- /Post Title -->
+							</div>
+
+							<!-- Post Content -->
+							<div class="content">
+								<p>
+									For the structure of our database, the "users" table will be storing the logins of the clinicians and the patients. The "user_perms" contains the permission details of the user to determine the control they have on the data. 
+									Depending on their roles, clinicians can have multiple patient’s data storing in the "patients" table, while patients themselves will only store their own patient details. The “patients” table also have a relation with "treatments" and "feed". 
+									They store the patients feed data and treatment history which are the data we need to display the patient’s dashboard. 
+								</p>
+								<!-- Post Image -->
+								<div class="image">
+									<a href="img/portfolio/design/Data Storage ER Diagram.jpg" class="image-popup">
+										<div class="gallery-image">
+											<img src="img/portfolio/design/Data Storage ER Diagram.jpg">
+										</div>
+									</a>
+								</div>
+								<!-- /Post Image -->
+							</div>
+							<!-- /Post Content -->
+						</article>
+					</section>
                 </div>
 
             </div>
@@ -280,10 +453,8 @@
 					<li><a href="home.html">Home</a></li>
 					<li><a href="requirements.html">Requirements</a></li>
 					<li><a href="research.html">Reseach</a></li>
-					<li><a href="algorithms.html">Algorithms</a></li>
 					<li><a href="hci.html">HCI</a></li>
 					<li><a href="design.html">Design</a></li>
-					<li><a href="implementation.html">Implementation</a></li>
 					<li><a href="testing.html">Testing</a></li>
 					<li><a href="evaluation.html">Evaluation</a></li>
 					<li><a href="appendices.html">Appendices</a></li>
