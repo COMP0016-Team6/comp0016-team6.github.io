@@ -1941,9 +1941,6 @@
  /*
   * Project Carousel
   *------------------*/
- .project-carousel {
-   margin-bottom: 130px;
- }
  .project-carousel .owl-wrapper-outer {
    z-index: 1;
  }
