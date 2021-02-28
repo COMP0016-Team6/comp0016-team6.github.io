@@ -121,7 +121,6 @@
 								<li><a href="design.html#system-architecture-diagram">System Architecture Diagram</a></li>
 								<li><a href="design.html#data-storage-relation-diagram">Data Storage Relation Diagram</a></li>
 								<li><a href="design.html#user-operation-sequence-diagram">User Operation Sequence Diagram</a></li>
-								<li><a href="design.html#class-diagram">Class Diagram</a></li>
 							</ul>
 						</li>
 
@@ -143,6 +142,8 @@
 							<a href="appendices.html" class="dropdown-toggle">Appendices</a>
 							<ul class="dropdown-menu">
 								<li><a href="appendices.html#supporting-docs">Supporting Docs</a></li>
+								<li><a href="appendices.html#deployment-manual">Deployment Manual</a></li>
+								<li><a href="appendices.html#user-manual">User Manual</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -186,67 +187,168 @@
 <!-- Main -->
 <main class="main-container">
     <div class="container">
-        <div class="row">
+		<div class="row">
 
-            <!-- Blog Sidebar -->
-            <div class="col-md-3">
-
-                <section class="section-small">
+			<!-- Blog Sidebar -->
+			<div class="col-md-3">
+	
+				<section class="section-small">
 					<!-- Widget: Menu -->
 					<div class="widget">
-
+	
 						<h4 class="title">Menu</h4>
 						<ul class="sidebar-menu">
 							<li><a href="#supporting-docs" class="smooth-scroll">Supporting Docs</a></li>
+							<li><a href="#deployment-manual" class="smooth-scroll">Deployment Manual</a></li>
+							<li><a href="#user-manual" class="smooth-scroll">User Manual</a></li>
 						</ul>
 	
 					</div>
 					<!-- /Widget: Menu -->
 				</section>
-
-            </div>
-
-            <!-- Blog Content -->
-            <div class="col-md-9">
-
-                <!-- Posts List -->
-                <div class="posts-list">
+	
+			</div>
+	
+			<!-- Blog Content -->
+			<div class="col-md-9">
+	
+				<!-- Posts List -->
+				<div class="posts-list">
 					
 					<section id="supporting-docs" class="section-small">
+	
 						<article>
 							<div class="project-information">
 								<!-- Post Title -->
 								<h2 class="title">Supporting Docs</h2>
 								<!-- /Post Title -->
 							</div>
-
+	
 							<!-- Post Content -->
 							<div class="content">
-								<h3 class="title"><a href="https://comp0016-team6.github.io/Dev-Blog/">Dev Blog</a> Posts</h3>
-								<ul>
-									<li><a href="https://comp0016-team6.github.io/Dev-Blog/jekyll/update/2020/10/23/blog-entry-1.html">Week 1 - Meeting the Client</a></li>
-									<li><a href="https://comp0016-team6.github.io/Dev-Blog/jekyll/update/2020/10/30/blog-entry-2.html">Week 2 - Primary Research</a></li>
-									<li><a href="https://comp0016-team6.github.io/Dev-Blog/jekyll/update/2020/11/06/blog-entry-3.html">Week 3 - HCI: Sketches, Personas, Prototypes and Evaluation</a></li>
-									<li><a href="https://comp0016-team6.github.io/Dev-Blog/jekyll/update/2020/11/13/blog-entry-4.html">Week 4 - Client Primary Research: Force and Pressure Sensors, FHIR Standards</a></li>
-									<li><a href="https://comp0016-team6.github.io/Dev-Blog/jekyll/update/2020/11/20/blog-entry-5.html">Week 5 - Meeting the Client, User Interface Feedback</a></li>
-									<li><a href="https://comp0016-team6.github.io/Dev-Blog/jekyll/update/2020/11/27/blog-entry-6.html">Week 6 - Finalising User Interface (Prototype) and the MoSCoW Requirements</a></li>
-									<li><a href="https://comp0016-team6.github.io/Dev-Blog/jekyll/update/2020/12/04/blog-entry-7.html">Week 7 - Tech Stack and System Architecture</a></li>
-									<li><a href="https://comp0016-team6.github.io/Dev-Blog/jekyll/update/2020/12/11/blog-entry-8.html">Week 8 - Front End Development</a></li>
-								</ul>
+								<div class="row">
+									<div class="col-md-5">
+										<h3 class="title">Elevator Pitch & Dev Blog Posts</h3>
+										<ul>
+											<li><a href="img/portfolio/appendices/Team 6 - Elevator Pitch.pptx">Slides</a></li>
+											<li><a href="img/portfolio/appendices/Team 6 - Elevator Pitch.pdf">PDF</a></li>
+											<li><a href="https://comp0016-team6.github.io/Dev-Blog/">Dev Blog Posts</a></li>
+										</ul>
+									</div>
+									<div class="col-md-4 col-md-offset-1">
+										<h3 class="title">Poster & Demo</h3>
+										<ul>
+											<li><a href="img/portfolio/appendices/Poster.pdf">Poster</a></li>
+											<li><a href="">Demo</a></li>
+										</ul>
+									</div>
+								</div>
+								<br />
+								<div class="row">
+									<div class="col-md-5">
+										<h3 class="title">Biweekly Reports</h3>
+										<ul>
+
+										</ul>
+									</div>
+									<div class="col-md-5 col-md-offset-1">
+										<h3 class="title">Download the Application</h3>
+										<ul>
+											<li><a href="https://github.com/COMP0016-Team6/NHS-Patient-Dashboard">NHS Patient Dashboard</a></li>
+										</ul>
+									</div>
+								</div>
 							</div>
 							<!-- /Post Content -->
 						</article>
+	
 					</section>
 
-                </div>
+					<secion id="deployment-manual" class="section-small">
+	
+						<article>
+							<div class="project-information">
+								<!-- Post Title -->
+								<h2 class="title">Deployment Manual</h2>
+								<!-- /Post Title -->
+							</div>
+	
+							<!-- Post Content -->
+							<div class="content">
+								<div>
+									<h3 class="title">Prerequisites</h3>
+									<ul>
+										<li><a href="https://git-scm.com/downloads">Git</a></li>
+										<li><a href="http://react-cn.github.io/react/downloads.html">React</a></li>
+										<li><a href="https://nodejs.org/en/download/">Node.js</a></li>
+										<li><a href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloads">PostgreSQL</a></li>
+									</ul>
+								</div>
+								<br/>
+								<div>
+									<h3 class="title">General Installation</h3>
+									<ul>
+										<li><code>git clone https://github.com/COMP0016-Team6/NHS-Patient-Dashboard.git</code></li>
+										<li><code>npm install --save react react-dom</code></li>
+									</ul>
+								</div>
+								<br />
+								<div>
+									<h3 class="title">To Run App</h3>
+									<ol>
+										<li>
+											Connect to the database
+											<ol>
+												<li>Open the SQL Shell and login to database</li>
+												<li>Open <code class="text-theme">db.js</code> in <code class="text-theme">server</code> directory</li>
+												<li>Revise line 5 and 6 to your PostgreSQL username and password<br /> <code class="text-theme">user: "",</code><br /><code class="text-theme">password: "",</code></li>
+											</ol>
+										</li>
+									
+										<li>Open <code class="text-theme">server</code> directory<br /> <code class="text-theme">cd server</code></li>
+										<li>Deploy the server<br /> <code class="text-theme">npm run dev</code></li>
+										<li>Open a new terminal</li>
+										<li>Open <code class="text-theme">client</code> directory<br /> <code class="text-theme">cd client</code></li>
+										<li>Run the app<br /><code class="text-theme">npm start</code></li>
+									</ol>
+								</div>
+							</div>
+							<!-- /Post Content -->
+						</article>
+	
+					</secion>
+	
+					<secion id="user-manual" class="section-small">
+	
+						<article>
+							<div class="project-information">
+								<!-- Post Title -->
+								<h2 class="title">User Manual</h2>
+								<!-- /Post Title -->
+							</div>
+	
+							<!-- Post Content -->
+							<div class="content">
+								<h3 class="title">User Registration</h3>
+								<h3 class="title">User Authentication</h3>
+								<h3 class="title">Patient Dashboard</h3>
+								<h3 class="title">Clinician Dashboard</h3>
+								<h3 class="title">Clinician Add Patient</h3>
+								<h3 class="title">Patient Information</h3>
+								<h3 class="title">Change treatment plan</h3>
+							</div>
+							<!-- /Post Content -->
+						</article>
+	
+					</secion>
 
-            </div>
-            <!-- /Blog Content -->
-
-        </div>
-
-    </div>
-
+				</div>
+	
+			</div>
+			<!-- /Blog Content -->
+	
+		</div>
+	</div>
 </main>
 <!-- /Main -->
 
@@ -296,10 +398,8 @@
 					<li><a href="home.html">Home</a></li>
 					<li><a href="requirements.html">Requirements</a></li>
 					<li><a href="research.html">Reseach</a></li>
-					<li><a href="algorithms.html">Algorithms</a></li>
 					<li><a href="hci.html">HCI</a></li>
 					<li><a href="design.html">Design</a></li>
-					<li><a href="implementation.html">Implementation</a></li>
 					<li><a href="testing.html">Testing</a></li>
 					<li><a href="evaluation.html">Evaluation</a></li>
 					<li><a href="appendices.html">Appendices</a></li>
