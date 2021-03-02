@@ -1,4 +1,9 @@
 /*--------------------------------------------------------------------------------------------------------------------
+ *
+ * Template   CleaThin - Clean and Minimal Site Template
+ * Version    1.0
+ * Author     Valery Timofeev
+ *
  *  1. Imports
  *  2. Less [only]
  *        2.1  Variables
@@ -2271,3 +2276,7 @@
    }
  }
  
+ .carousel-control.left, .carousel-control.right{ 
+    background: none;
+  }
+
