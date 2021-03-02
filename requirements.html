@@ -76,9 +76,9 @@
 							<a href="home.html">Home</a>
 							<ul class="dropdown-menu">
 								<li><a href="home.html#abstract">Abstract</a></li>
-								<li><a href="home.html#contents"> Portofolio Contents</a></li>
-								<li><a href="home.html#best-features">Best Features</a></li>
 								<li><a href="home.html#demo-video">Demo Video</a></li>
+								<li><a href="home.html#best-features">Best Features</a></li>
+								<li><a href="home.html#project-management">Project Management</a></li>
 								<li><a href="home.html#team-members">Team Members</a></li>
 							</ul>
 						</li>
@@ -86,12 +86,13 @@
 						<li class="dropdown">
 							<a href="requirements.html" class="dropdown-toggle">Requirements</a>
 							<ul class="dropdown-menu">
-								<li><a href="requirements.html#project-background">Project Background</a></li>
-								<li><a href="requirements.html#client-requirements">Client Requirements</a></li>
-								<li><a href="requirements.html#solution">Solution</a></li>
-                                <li><a href="requirements.html#user-interview">User Interview</a></li>
-                                <li><a href="requirements.html#persona">Persona</a></li>
-								<li><a href="requirements.html#moscow-requirements">MoSCoW Requirements</a></li>
+								<li><a href="#project-background" class="smooth-scroll">Project Background</a></li>
+                            <li><a href="#solution" class="smooth-scroll">Solution</a></li>
+                            <li><a href="#client-requirements" class="smooth-scroll">Client Requirements</a></li>
+                            <li><a href="#user-interview" class="smooth-scroll">User Interview</a></li>
+                            <li><a href="#persona" class="smooth-scroll">Persona</a></li>
+                            <li><a href="#use-cases" class="smooth-scroll">Use Cases</a></li>
+                            <li><a href="#moscow-requirements" class="smooth-scroll">MoSCoW Requirements</a></li>
 							</ul>
 						</li>
 
@@ -118,9 +119,17 @@
 							<a href="design.html" class="dropdown-toggle">Design</a>
 							<ul class="dropdown-menu">
 								<li><a href="design.html#tech-stack">Teck Stack</a></li>
+								<li><a href="design.html#site-map">Site Map</a></li>
 								<li><a href="design.html#system-architecture-diagram">System Architecture Diagram</a></li>
-								<li><a href="design.html#data-storage-relation-diagram">Data Storage Relation Diagram</a></li>
+								<li><a href="design.html#data-storage-er-diagram">Data Storage ER Diagram</a></li>
 								<li><a href="design.html#user-operation-sequence-diagram">User Operation Sequence Diagram</a></li>
+							</ul>
+						</li>
+
+						<li class="dropdown">
+							<a href="implementation.html" class="dropdown-toggle">Implementaion</a>
+							<ul class="dropdown-menu">
+								
 							</ul>
 						</li>
 
@@ -142,7 +151,7 @@
 							<a href="appendices.html" class="dropdown-toggle">Appendices</a>
 							<ul class="dropdown-menu">
 								<li><a href="appendices.html#supporting-docs">Supporting Docs</a></li>
-                                <li><a href="appendices.html#deployment-manual">Deployment Manual</a></li>
+								<li><a href="appendices.html#deployment-manual">Deployment Manual</a></li>
 								<li><a href="appendices.html#user-manual">User Manual</a></li>
 							</ul>
 						</li>
@@ -199,13 +208,13 @@
                         <h4 class="title">Menu</h4>
                         <ul class="sidebar-menu">
                             <li><a href="#project-background" class="smooth-scroll">Project Background</a></li>
-                            <li><a href="#client-requirements" class="smooth-scroll">Client Requirements</a></li>
                             <li><a href="#solution" class="smooth-scroll">Solution</a></li>
+                            <li><a href="#client-requirements" class="smooth-scroll">Client Requirements</a></li>
                             <li><a href="#user-interview" class="smooth-scroll">User Interview</a></li>
                             <li><a href="#persona" class="smooth-scroll">Persona</a></li>
+                            <li><a href="#use-cases" class="smooth-scroll">Use Cases</a></li>
                             <li><a href="#moscow-requirements" class="smooth-scroll">MoSCoW Requirements</a></li>
                         </ul>
-
                 </div>
                 <!-- /Widget: Menu -->
                 </section>
@@ -289,6 +298,34 @@
                         </article>
                     </section>
 
+                    <section id="solution" class="section-small">
+                        <!-- Single Post With Image -->
+                        <article>
+    
+                            <!-- Post Title -->
+                            <h2 class="title">Solution</h2>
+                            <!-- /Post Title -->
+    
+                            <!-- Post Content -->
+                            <div class="content">
+                                <p>
+                                    FHIR-compliant data visualisation tool from Infusion Pumps in a form of a web application. 
+                                    The authorised users will be able to log in the system to visualise the dashboards of the patients they are treating.
+                                </p>
+                                <p>
+                                    Graphs and Charts must be customisable, having several different metrics, and with the ability to view the prescribed vs. 
+                                    actual rates of feed the patient is receiving.
+                                </p>
+                                <p>
+                                    There must be a high level of data security since we are dealing with medical information and clinicians/parents 
+                                    will only see the dashboards of patients they were assigned.
+                                </p>
+                            </div>
+                            <!-- /Post Content -->
+    
+                        </article>
+                    </section>
+
                     <section id="client-requirements" class="section-small">
                         <article>
     
@@ -313,34 +350,6 @@
                                     <li>Should we put in place some sort of alerting systems?</li>
                                     <li>How long would you like to keep the patients' data?</li>
                                 </ul>
-                            </div>
-                            <!-- /Post Content -->
-    
-                        </article>
-                    </section>
-
-                    <section id="solution" class="section-small">
-                        <!-- Single Post With Image -->
-                        <article>
-    
-                            <!-- Post Title -->
-                            <h2 class="title">Solution</h2>
-                            <!-- /Post Title -->
-    
-                            <!-- Post Content -->
-                            <div class="content">
-                                <p>
-                                    FHIR-compliant data visualisation tool from Infusion Pumps in a form of a web application. 
-                                    The authorised users will be able to log in the system to visualise the dashboards of the patients they are treating.
-                                </p>
-                                <p>
-                                    Graphs and Charts must be customisable, having several different metrics, and with the ability to view the prescribed vs. 
-                                    actual rates of feed the patient is receiving.
-                                </p>
-                                <p>
-                                    There must be a high level of data security since we are dealing with medical information and clinicians/parents 
-                                    will only see the dashboards of patients they were assigned.
-                                </p>
                             </div>
                             <!-- /Post Content -->
     
@@ -430,6 +439,32 @@
                                     An online dashboard is needed to visualise the patient data. Data security and reliability are her top priorities. 
                                     The dashboard will uncover long term trends and make data analysis easier. 
                                 </p>
+                            </div>
+                            <!-- /Post Image -->
+    
+                        </article>
+                    </section>
+
+                    <section id="use-cases" class="section-small">
+                        <!-- Single Post With Image -->
+                        <article>
+    
+                            <!-- Post Title -->
+                            <h2 class="title">Use Cases</h2>
+                            <!-- /Post Title -->
+    
+                            <!-- Post Content -->
+                            <div class="content">
+                            </div>
+                            <!-- /Post Content -->
+    
+                            <!-- Post Image -->
+                            <div class="image">
+                                <a href="img/portfolio/requirements/Use Case Diagram.jpg" class="image-popup">
+                                    <div class="gallery-image">
+                                        <img src="img/portfolio/requirements/Use Case Diagram.jpg">
+                                    </div>
+                                </a>
                             </div>
                             <!-- /Post Image -->
     
@@ -613,6 +648,7 @@
 					<li><a href="research.html">Reseach</a></li>
 					<li><a href="hci.html">HCI</a></li>
 					<li><a href="design.html">Design</a></li>
+                    <li><a href="implementation.html">Implementaion</a></li>
 					<li><a href="testing.html">Testing</a></li>
 					<li><a href="evaluation.html">Evaluation</a></li>
 					<li><a href="appendices.html">Appendices</a></li>

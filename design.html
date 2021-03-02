@@ -76,9 +76,9 @@
 							<a href="home.html">Home</a>
 							<ul class="dropdown-menu">
 								<li><a href="home.html#abstract">Abstract</a></li>
-								<li><a href="home.html#contents"> Portofolio Contents</a></li>
-								<li><a href="home.html#best-features">Best Features</a></li>
 								<li><a href="home.html#demo-video">Demo Video</a></li>
+								<li><a href="home.html#best-features">Best Features</a></li>
+								<li><a href="home.html#project-management">Project Management</a></li>
 								<li><a href="home.html#team-members">Team Members</a></li>
 							</ul>
 						</li>
@@ -86,12 +86,13 @@
 						<li class="dropdown">
 							<a href="requirements.html" class="dropdown-toggle">Requirements</a>
 							<ul class="dropdown-menu">
-								<li><a href="requirements.html#project-background">Project Background</a></li>
-								<li><a href="requirements.html#client-requirements">Client Requirements</a></li>
-								<li><a href="requirements.html#solution">Solution</a></li>
-                                <li><a href="requirements.html#user-interview">User Interview</a></li>
-                                <li><a href="requirements.html#persona">Persona</a></li>
-								<li><a href="requirements.html#moscow-requirements">MoSCoW Requirements</a></li>
+								<li><a href="#project-background" class="smooth-scroll">Project Background</a></li>
+                            <li><a href="#solution" class="smooth-scroll">Solution</a></li>
+                            <li><a href="#client-requirements" class="smooth-scroll">Client Requirements</a></li>
+                            <li><a href="#user-interview" class="smooth-scroll">User Interview</a></li>
+                            <li><a href="#persona" class="smooth-scroll">Persona</a></li>
+                            <li><a href="#use-cases" class="smooth-scroll">Use Cases</a></li>
+                            <li><a href="#moscow-requirements" class="smooth-scroll">MoSCoW Requirements</a></li>
 							</ul>
 						</li>
 
@@ -118,9 +119,17 @@
 							<a href="design.html" class="dropdown-toggle">Design</a>
 							<ul class="dropdown-menu">
 								<li><a href="design.html#tech-stack">Teck Stack</a></li>
+								<li><a href="design.html#site-map">Site Map</a></li>
 								<li><a href="design.html#system-architecture-diagram">System Architecture Diagram</a></li>
-								<li><a href="design.html#data-storage-relation-diagram">Data Storage Relation Diagram</a></li>
+								<li><a href="design.html#data-storage-er-diagram">Data Storage ER Diagram</a></li>
 								<li><a href="design.html#user-operation-sequence-diagram">User Operation Sequence Diagram</a></li>
+							</ul>
+						</li>
+
+						<li class="dropdown">
+							<a href="implementation.html" class="dropdown-toggle">Implementaion</a>
+							<ul class="dropdown-menu">
+								
 							</ul>
 						</li>
 
@@ -200,8 +209,9 @@
 						<ul class="sidebar-menu">
 							<li><a href="#tech-stack" class="smooth-scroll">Tech Stack</a></li>
 							<li><a href="#system-architecture-diagram" class="smooth-scroll">System Architecture Diagram</a></li>
-							<li><a href="#data-storage-relation-diagram" class="smooth-scroll">Data Storage Relation Diagram</a></li>
+							<li><a href="#site-map" class="smooth-scroll">Site Map</a></li>
 							<li><a href="#user-operation-sequence-diagram" class="smooth-scroll">User Operation Sequence Diagram</a></li>
+							<li><a href="#data-storage-er-diagram" class="smooth-scroll">Data Storage ER Diagram</a></li>
 						</ul>
 	
 					</div>
@@ -371,26 +381,28 @@
 
 					</section>
 
-					<section id="data-storage-relation-diagram" class="section-small">
+					<section id="site-map" class="section-small">
 						<article>
 							<div class="project-information">
 								<!-- Post Title -->
-								<h2 class="title">Data Storage Relation Diagram</h2>
+								<h2 class="title">Site Map</h2>
 								<!-- /Post Title -->
 							</div>
 
 							<!-- Post Content -->
 							<div class="content">
 								<p>
-									For the structure of our database, the "users" table will be storing the logins of the clinicians and the patients. The "user_perms" contains the permission details of the user to determine the control they have on the data. 
-									Depending on their roles, clinicians can have multiple patient’s data storing in the "patients" table, while patients themselves will only store their own patient details. The “patients” table also have a relation with "treatments" and "feed". 
-									They store the patients feed data and treatment history which are the data we need to display the patient’s dashboard. 
+									According to the role of the users, they will see a completely different page after login. 
+									If the role of the user is a clinician, he can see a clinician version dashboard, which includes all patients he serves, and from there, 
+									he can add more patients or check the dashboard of the patient. On the patient dashboard page, 
+									the clinician is able to view the information of the patient as well. However, if the user is a patient, 
+									he will be only allowed to check himself dashboard and information.
 								</p>
 								<!-- Post Image -->
 								<div class="image">
-									<a href="img/portfolio/design/Data Storage Relation Diagram.jpg" class="image-popup">
+									<a href="img/portfolio/design/Site Map.jpg" class="image-popup">
 										<div class="gallery-image">
-											<img src="img/portfolio/design/Data Storage Relation Diagram.jpg">
+											<img src="img/portfolio/design/Site Map.jpg">
 										</div>
 									</a>
 								</div>
@@ -420,11 +432,132 @@
 									By inputting the new treatment data, the back-end will use them to update this info of the patient in the database. 
 									Then the new suggested feed will be updated and displayed on the dashboard.
 								</p>
+								
+								<!-- Carousel -->
+								<div class="project-carousel owl-carousel owl-theme">
+									<div class="item">
+										<div class="text-center">
+											<h2 class="title">User Register</h2>
+										</div>
+
+										<div class="image">
+											<a href="img/portfolio/design/User Operation Sequence Diagram/User Register.jpg" class="image-popup">
+												<div class="gallery-image">
+													<img src="img/portfolio/design/User Operation Sequence Diagram/User Register.jpg">
+												</div>
+											</a>
+										</div>
+									</div>
+									
+									<div class="item">
+										<div class="text-center">
+											<h2 class="title">User Authentication</h2>
+										</div>
+
+										<div class="image">
+											<a href="img/portfolio/design/User Operation Sequence Diagram/User Authentication.jpg" class="image-popup">
+												<div class="gallery-image">
+													<img src="img/portfolio/design/User Operation Sequence Diagram/User Authentication.jpg">
+												</div>
+											</a>
+										</div>
+									</div>
+
+									<div class="item">
+										<div class="text-center">
+											<h2 class="title">Patient Dashboard</h2>
+										</div>
+
+										<div class="image">
+											<a href="img/portfolio/design/User Operation Sequence Diagram/Patient Dashboard.jpg" class="image-popup">
+												<div class="gallery-image">
+													<img src="img/portfolio/design/User Operation Sequence Diagram/Patient Dashboard.jpg">
+												</div>
+											</a>
+										</div>
+									</div>
+
+									<div class="item">
+										<div class="text-center">
+											<h2 class="title">Clinician Dashboard</h2>
+										</div>
+
+										<div class="image">
+											<a href="img/portfolio/design/User Operation Sequence Diagram/Clinician Dashboard.jpg" class="image-popup">
+												<div class="gallery-image">
+													<img src="img/portfolio/design/User Operation Sequence Diagram/Clinician Dashboard.jpg">
+												</div>
+											</a>
+										</div>
+									</div>
+
+									<div class="item">
+										<div class="text-center">
+											<h2 class="title">Clinician Add Patient</h2>
+										</div>
+
+										<div class="image">
+											<a href="img/portfolio/design/User Operation Sequence Diagram/Clinician Add Patient.jpg" class="image-popup">
+												<div class="gallery-image">
+													<img src="img/portfolio/design/User Operation Sequence Diagram/Clinician Add Patient.jpg">
+												</div>
+											</a>
+										</div>
+									</div>
+
+									<div class="item">
+										<div class="text-center">
+											<h2 class="title">Patient Info</h2>
+										</div>
+
+										<div class="image">
+											<a href="img/portfolio/design/User Operation Sequence Diagram/Patient Info.jpg" class="image-popup">
+												<div class="gallery-image">
+													<img src="img/portfolio/design/User Operation Sequence Diagram/Patient Info.jpg">
+												</div>
+											</a>
+										</div>
+									</div>
+
+									<div class="item">
+										<div class="text-center">
+											<h2 class="title">Clinician Change Treatment</h2>
+										</div>
+
+										<div class="image">
+											<a href="img/portfolio/design/User Operation Sequence Diagram/Clinician Change Treatment.jpg" class="image-popup">
+												<div class="gallery-image">
+													<img src="img/portfolio/design/User Operation Sequence Diagram/Clinician Change Treatment.jpg">
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /Post Content -->
+						</article>
+					</section>
+
+					<section id="data-storage-er-diagram" class="section-small">
+						<article>
+							<div class="project-information">
+								<!-- Post Title -->
+								<h2 class="title">Data Storage ER Diagram</h2>
+								<!-- /Post Title -->
+							</div>
+
+							<!-- Post Content -->
+							<div class="content">
+								<p>
+									For the structure of our database, the "users" table will be storing the logins of the clinicians and the patients. The "user_perms" contains the permission details of the user to determine the control they have on the data. 
+									Depending on their roles, clinicians can have multiple patient’s data storing in the "patients" table, while patients themselves will only store their own patient details. The “patients” table also have a relation with "treatments" and "feed". 
+									They store the patients feed data and treatment history which are the data we need to display the patient’s dashboard. 
+								</p>
 								<!-- Post Image -->
 								<div class="image">
-									<a href="img/portfolio/design/User Operation Sequence Diagram.jpg" class="image-popup">
+									<a href="img/portfolio/design/Data Storage ER Diagram.jpg" class="image-popup">
 										<div class="gallery-image">
-											<img src="img/portfolio/design/User Operation Sequence Diagram.jpg">
+											<img src="img/portfolio/design/Data Storage ER Diagram.jpg">
 										</div>
 									</a>
 								</div>
@@ -493,6 +626,7 @@
 					<li><a href="research.html">Reseach</a></li>
 					<li><a href="hci.html">HCI</a></li>
 					<li><a href="design.html">Design</a></li>
+					<li><a href="implementation.html">Implementaion</a></li>
 					<li><a href="testing.html">Testing</a></li>
 					<li><a href="evaluation.html">Evaluation</a></li>
 					<li><a href="appendices.html">Appendices</a></li>
