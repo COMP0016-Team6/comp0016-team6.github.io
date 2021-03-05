@@ -793,7 +793,6 @@
    width: 100%;
    height: 100%;
    opacity: .0;
-   background: rgba(255, 255, 255, 0.8);
  }
  .gallery-image::after {
    -webkit-border-radius: 50%;
