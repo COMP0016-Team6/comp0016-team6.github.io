@@ -10,7 +10,16 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<style>
+	td,th{
+		padding: 5px 20px;
+	}
+	
+	#table {
+		border-collapse: separate;
+		border-spacing: 15px;
+	}
+</style>
 <!-- Favicon -->
 <link rel="shortcut icon" href="img/favicon.png">
 
@@ -86,7 +95,7 @@
 						<li class="dropdown">
 							<a href="design.html" class="dropdown-toggle">Design</a>
 							<ul class="dropdown-menu">
-								<li><a href="design.html#tech-stack">Teck Stack</a></li>
+								<li><a href="design.html#tech-stack">Tech Stack</a></li>
 								<li><a href="design.html#site-map">Site Map</a></li>
 								<li><a href="design.html#system-architecture-diagram">System Architecture Diagram</a></li>
 								<li><a href="design.html#data-storage-er-diagram">Data Storage ER Diagram</a></li>
@@ -111,7 +120,11 @@
 						<li class="dropdown">
 							<a href="evaluation.html" class="dropdown-toggle">Evaluation</a>
 							<ul class="dropdown-menu">
-								
+								<li><a href="evaluation.html#known-bug-list">Known Bug List</a></li>
+								<li><a href="evaluation.html#moscow-achievements-list">MoSCoW Achievements List</a></li>
+								<li><a href="evaluation.html#individual-contribution">Individual Contribution</a></li>
+								<li><a href="evaluation.html#critial-evaluation">Critical Evaluation</a></li>
+								<li><a href="evaluation.html#future-work">Future Work</a></li>
 							</ul>
 						</li>
 
@@ -175,7 +188,11 @@
 
 						<h4 class="title">Menu</h4>
 						<ul class="sidebar-menu">
-							
+							<li><a href="#known-bug-list" class="smooth-scroll">Known Bug List</a></li>
+							<li><a href="#moscow-achievements-list" class="smooth-scroll">MoSCoW Achievements List</a></li>
+							<li><a href="#individual-contribution" class="smooth-scroll">Individual Contribution</a></li>
+							<li><a href="#critical-evaluation" class="smooth-scroll">Critical Evaluation</a></li>
+							<li><a href="#future-work" class="smooth-scroll">Future Work</a></li>
 						</ul>
 	
 					</div>
@@ -190,8 +207,395 @@
                 <!-- Posts List -->
                 <div class="posts-list">
 
-                    
+					<section id="known-bug-list" class="section-small">
 
+						<article>
+							<div class="project-information">
+								<!-- Post Title -->
+								<h2 class="title">Known Bug List</h2>
+								<!-- /Post Title -->
+							</div>
+
+							<!-- Post Content -->
+							<div class="content">
+								<table id="table">
+									<tr>
+										<th>ID</th>
+										<th>Bug Description</th>
+										<th>Priority</th>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td></td>
+										<td>High</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td></td>
+										<td>Medium</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td></td>
+										<td>Low</td>
+									</tr>
+								</table>
+							</div>
+							<!-- /Post Content -->
+						</article>
+
+					</section>
+					
+					<section id="moscow-achievements-list" class="section-small">
+
+						<article>
+							<div class="project-information">
+								<!-- Post Title -->
+								<h2 class="title">MoSCoW Achievements List</h2>
+								<!-- /Post Title -->
+							</div>
+
+							<!-- Post Content -->
+							<div class="content">
+								<table id="table">
+									<tr>
+										<th>ID</th>
+										<th>Description</th>
+										<th>Priority</th>
+										<th>State</th>
+										<th>Contributors</th>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>Monitor and reliably read live date from infusion pump.</td>
+										<td>Must</td>
+										<td><i class="fa fa-fw fa-check"></i></td>
+										<td>Daulet</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>Dashboard for visualising the patient infusion pump data over time.</td>
+										<td>Must</td>
+										<td><i class="fa fa-fw fa-check"></i></td>
+										<td>Daulet</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>Types of graphs to choose from on the dashboard, i.e., rate over time, volume over time, etc.</td>
+										<td>Must</td>
+										<td><i class="fa fa-fw fa-check"></i></td>
+										<td>Daulet</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>Target feed and Actual feed comparison on the graph.</td>
+										<td>Must</td>
+										<td><i class="fa fa-fw fa-check"></i></td>
+										<td>Daulet</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>FHIR Standards to ensure the secure transfer of data over a network.</td>
+										<td>Must</td>
+										<td><i class="fa fa-fw fa-close"></i></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>6</td>
+										<td>Secure and Reliable Authorisation System.</td>
+										<td>Must</td>
+										<td><i class="fa fa-fw fa-check"></i></td>
+										<td>Daulet</td>
+									</tr>
+									<tr>
+										<td>7</td>
+										<td>Basic info page of the patient.</td>
+										<td>Must</td>
+										<td><i class="fa fa-fw fa-check"></i></td>
+										<td>Daulet</td>
+									</tr>
+									<tr>
+										<td>8</td>
+										<td>Data will be stored permanently.</td>
+										<td>Must</td>
+										<td><i class="fa fa-fw fa-check"></i></td>
+										<td>Daulet</td>
+									</tr>
+									<tr>
+										<td>9</td>
+										<td>Make changes to the patient's treatment plan (Clinician Only).</td>
+										<td>Must</td>
+										<td><i class="fa fa-fw fa-check"></i></td>
+										<td>Daulet</td>
+									</tr>
+									<tr>
+										<td>10</td>
+										<td>A list of patients who are being treated by the clinician (Clinician Only).</td>
+										<td>Should</td>
+										<td><i class="fa fa-fw fa-check"></i></td>
+										<td>Daulet</td>
+									</tr>
+									<tr>
+										<td>11</td>
+										<td>Notifications/Alerts when the feed is abnormally high/low.</td>
+										<td>Should</td>
+										<td><i class="fa fa-fw fa-close"></i></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>12</td>
+										<td>Different visualising methods to choose from (Linear Graph vs Bar Graph vs something we have on the overview page).</td>
+										<td>Should</td>
+										<td><i class="fa fa-fw fa-close"></i></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>13</td>
+										<td>Algorithm to make predictions based on historical data OR Deduce patterns from historical data.</td>
+										<td>Could</td>
+										<td><i class="fa fa-fw fa-close"></i></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>14</td>
+										<td>Patients reporting the reasons for large gaps between target and actual feed (Such as "Exercised between 1pm and 2pm", "Low appetite because of XYZ").</td>
+										<td>Could</td>
+										<td><i class="fa fa-fw fa-close"></i></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>15</td>
+										<td>Clinicians could update the records of the patients, example: If a patient did handle Treatment X too well, we can add it to their info page/database,so that if the clinicians change, they have some information to work with.</td>
+										<td>Could</td>
+										<td><i class="fa fa-fw fa-close"></i></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>16</td>
+										<td>Registration Page - only authorized people will use the app.</td>
+										<td>Won't</td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>17</td>
+										<td>Data Removal - data becomes more important over time.</td>
+										<td>Won't</td>
+										<td></td>
+										<td></td>
+									</tr>
+								</table>
+								<p>Key Functionalities: %<br/>Optional Functionalities: %</p>
+							</div>
+							<!-- /Post Content -->
+						</article>
+
+					</section>
+
+					<section id="individual-contribution" class="section-small">
+
+						<article>
+							<div class="project-information">
+								<!-- Post Title -->
+								<h2 class="title">Individual Contribution</h2>
+								<!-- /Post Title -->
+							</div>
+
+							<!-- Post Content -->
+							<div class="content">
+								<table id="table">
+									<tr>
+										<th>Part of Project</th>
+										<th>Daulet Batayev</th>
+										<th>Henry Ching</th>
+										<th>Tianang Chen</th>
+									</tr>
+									<tr>
+										<td>Client Liasion</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Requiremetns Analysis</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Research</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>UI Design</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Prototyping</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Programming</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Documentation</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Presentation</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Blog</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Testing</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Legal Essay</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Project Website</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Poster Design</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Video Editing</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td><strong>Overall Contribution</strong></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td><strong>Main Roles</strong></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+								</table>
+							</div>
+							<!-- /Post Content -->
+						</article>
+
+					</section>
+
+					<section id="critical-evaluation" class="section-small">
+
+						<article>
+							<div class="project-information">
+								<!-- Post Title -->
+								<h2 class="title">Critical Evaluation</h2>
+								<!-- /Post Title -->
+							</div>
+
+							<!-- Post Content -->
+							<div class="content">
+								<h3 class="title">User Interface</h3>
+								<h3 class="title">Functionalities</h3>
+								<p>
+									Referring to our MoSCoW list and five keywords of our project: 
+									multiple signatures, customizable dashboard, system intelligence, patient treatment history and feedback system,
+									we have tried our best at the back-end side to cover the requirements on MoSCoW list as more as we can and finally we are delighted to see that 
+									we are successful in covering most of them. For more information about the functionalities,
+									please check our demo video and go to the Implementation page to figure out what functions are available in this software and how we implemented them.
+								</p>
+								<h3 class="title">Stability</h3>
+								<h3 class="title">Efficiency</h3>
+								<h3 class="title">Compatility</h3>
+								<h3 class="title">Maintainability</h3>
+								<p>
+									In this project, all of our dependencies are open source technology and have official documents. Users can consult relevant technical materials at any time.
+									Meanwhile, in the process of writing code, we also applied a bunch of programming skills to improve the readability of the source code, such as adding documentation.
+									In addition, we comply with the principle of single responsibility to ensure that the code is loosely coupled.
+								</p>
+								<h3 class="title">Project Management</h3>
+								<P>
+									Offline cooperation becomes basically impossible due to our team members come from different cities in different time zones. 
+									Hence, online cooperation on such a complicated project is a new challenge for us.
+									we decided to use Microsoft Teams for the subsequent meetings and online cooperation. 
+									This is mainly because that MT not only provides remote meeting rooms that support sharing screens but also supports creating doc files that are able to operate simultaneously. 
+									This allows each of us to record the points that we think of during the discussion, instead of one of us playing as note-taker and upload the discussion results after the meeting, 
+									which greatly improves the team cooperation efficiency.<br /><br />
+									In terms of meeting arrangements, we guarantee at least one bi-hours online meeting for each week to discuss our ideas after doing researches, summarize the progress of the last week and 
+									to determine the tasks for the coming new week. During the period we have intensive works, we tend to have a quick half hours meeting every day. 
+									In addition, we also have a meeting with our clients every two weeks to present our project progress and receive reasonable feedback and suggestions from them.
+								</P>
+							</div>
+							<!-- /Post Content -->
+						</article>
+
+					</section>
+
+					<section id="future-work" class="section-small">
+
+						<article>
+							<div class="project-information">
+								<!-- Post Title -->
+								<h2 class="title">Future Work</h2>
+								<!-- /Post Title -->
+							</div>
+
+							<!-- Post Content -->
+							<div class="content">
+								<p>If there are more time we are given, we will seek improvements on these fields: </p>
+								<ul>
+									<li>
+										<p>
+											<strong>Actual Infusion Pump</strong><br />
+											Since our project this year is online, we have no chance to access GOSH hospital. 
+											We can only rely on our clients' demo videos to imagine how the infusion pumps work, and the clinical data are all simulated with a Python file. 
+											If we can work with an actual infusion pump in the future and secure the whole process from collecting data to visualising data on a dashboard is fine, 
+											our work will be more meaningful and helpful to the clinicians.
+										</p>
+									</li>
+									<li>
+										<p>
+											<strong>ML Algorithm</strong><br />
+											Currently, our patient dashboard can only visualise the patient's feed rate and feed energy. Although our work has met the basic requirements, 
+											it still can not be regraded as outstanding in term of functionalities. In the next stage, we will potentially work with Tensorflow on Python 
+											and apply some machine learning algorithms to analyze the patients' target feeds.
+										</p>	
+									</li>
+								</ul>
+							</div>
+							<!-- /Post Content -->
+						</article>
+
+					</section>
                 </div>
 
             </div>
