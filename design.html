@@ -32,10 +32,11 @@
 <!-- Navigation -->
 <nav id="navigation" class="navbar affix">
 
-	<div class="container">
+	<div>
 
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-md-1"></div>
+			<div class="col-md-9">
 
 				<!-- Navigation Header -->
 				<div class="navbar-header">
@@ -155,9 +156,12 @@
 							<a href="appendices.html" class="dropdown-toggle">Appendices</a>
 							<ul class="dropdown-menu">
 								<li><a href="appendices.html#supporting-docs">Supporting Docs</a></li>
-								<li><a href="appendices.html#user-manual">User Manual</a></li>
 								<li><a href="appendices.html#deployment-manual">Deployment Manual</a></li>								
 							</ul>
+						</li>
+
+						<li>
+							<a href="https://comp0016-team6.github.io/user-manual/">User Manual</a>
 						</li>
 					</ul>
 				</div>
@@ -242,9 +246,7 @@
 							<!-- Post Content -->
 							<div class="content">
 								<p>
-									To choose the tech stack, we considered our previous experiences and preferences, 
-									carefully evaluating the suitability of this project by constantly referring to the MoSCoW requirements. 
-									It was important for us that the language or technology had good documentation and had many available open-source resources that we can benefit from.
+									To choose the tech stack, we have taken into consideration our previous, and carefully evaluating the suitability by referring to the MoSCoW requirements. It is important for us that the language or tools have good documentation and many available open-source resources that we can benefit from.
 								</p>
 							</div>
 							<!-- /Post Content -->
@@ -265,7 +267,7 @@
 											React is a stable, efficient, beginner-friendly JavaScript framework, which makes creating a user-friendly, scalable, and dynamically changing interface simple. 
 											There are a ton of useful libraries and resources available, and the documentation is very well written. 
 											Since React is modern and popular, there will be no problems for incoming developers to maintain the codebase.
-											In addition, React uses JSX syntax compared to HTML with Vue so it is easier to understand the function of a particular component.
+											Besides, React uses JSX syntax compared to HTML with Vue so it is easier to understand the function of a particular component.
 											This means React does have greater expandability and scalability since reusing JSX is easier as to HTML.
 										</p>
 									</div>
@@ -415,11 +417,11 @@
 							<!-- Post Content -->
 							<div class="content">
 								<p>
-									According to the role of the users, they will see a completely different page after login. 
-									If the role of the user is a clinician, he can see a clinician version dashboard, which includes all patients he serves, and from there, 
-									he can add more patients or check the dashboard of the patient. On the patient dashboard page, 
-									the clinician is able to view the information of the patient as well. However, if the user is a patient, 
-									he will be only allowed to check himself dashboard and information.
+									According to the role of the users, they will see completely different pages after login. 
+									If it is a clinician, he can see a clinician version dashboard, which includes all patients he serves, 
+									and from there, he can add more patients or check the dashboard of the patient. 
+									On the patient dashboard page, the clinician will be able to view the information of the patient as well. 
+									On the other hand, a patient will be only allowed to check his dashboard and information.
 								</p>
 								<!-- Post Image -->
 								<div class="image">
@@ -446,14 +448,10 @@
 							<!-- Post Content -->
 							<div class="content">
 								<p>
-									When the user opens the dashboard pages, the data will be fetched in order to generate the graph for the dashboard. 
-									Therefore, the patient’s feed and treatment data will be queried from the database, which constantly stores up to date patient data in the background. 
-									After it is passed to the back-end, the dashboard can be displayed to the user using those data.
+									When opening the patient dashboard page, data needs to be fetched to generate the graph for the dashboard. Therefore, the patient’s feed and treatment data will be queried from the database. After it is passed to the back-end, the dashboard can be displayed to the user using those data.
 								</p>
 								<p>
-									A clinician then has the option to change the treatment plan of the patient. 
-									By inputting the new treatment data, the back-end will use them to update this info of the patient in the database. 
-									Then the new suggested feed will be updated and displayed on the dashboard.
+									During the change treatment plan process, the clinician will be inputting the new treatment data. After that, the back-end will update this info of the patient in the database. Then the new suggested feed will be updated and displayed on the dashboard.
 								</p>
 								
 								<!-- Carousel -->
@@ -572,9 +570,7 @@
 							<!-- Post Content -->
 							<div class="content">
 								<p>
-									For the structure of our database, the "users" table will be storing the logins of the clinicians and the patients. The "user_perms" contains the permission details of the user to determine the control they have on the data. 
-									Depending on their roles, clinicians can have multiple patient’s data storing in the "patients" table, while patients themselves will only store their own patient details. The “patients” table also have a relation with "treatments" and "feed". 
-									They store the patients feed data and treatment history which are the data we need to display the patient’s dashboard. 
+									For the structure of our database, the "users" table will be storing the logins of the clinicians and the patients. The "user_perms" contains the permission details of users to determine the control they have on the data. Depending on their roles, clinicians can have multiple patient’s data, storing in the "patients" table, while patients themselves will only store their patient details. The “patients” table also have a relation with "treatments" and "feed". They store the patients feed data and treatment history which are the data we need to display the patient’s dashboard.
 								</p>
 								<!-- Post Image -->
 								<div class="image">

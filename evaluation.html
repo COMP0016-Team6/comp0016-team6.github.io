@@ -43,10 +43,11 @@
 <!-- Navigation -->
 <nav id="navigation" class="navbar affix">
 
-	<div class="container">
+	<div>
 
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-md-1"></div>
+			<div class="col-md-9">
 
 				<!-- Navigation Header -->
 				<div class="navbar-header">
@@ -166,9 +167,12 @@
 							<a href="appendices.html" class="dropdown-toggle">Appendices</a>
 							<ul class="dropdown-menu">
 								<li><a href="appendices.html#supporting-docs">Supporting Docs</a></li>
-								<li><a href="appendices.html#user-manual">User Manual</a></li>
 								<li><a href="appendices.html#deployment-manual">Deployment Manual</a></li>								
 							</ul>
+						</li>
+
+						<li>
+							<a href="https://comp0016-team6.github.io/user-manual/">User Manual</a>
 						</li>
 					</ul>
 				</div>
@@ -554,57 +558,31 @@
 							<div class="content">
 								<h3 class="title">User Interface</h3>
 								<p>
-									Since our users are clinicians and patients, most of them only have very elementary experience in using computers and do not understand the how the web app works.
-									Therefore, a good UI design is very important in our web app. When we design the UI, we always try to make it simple and clear to enable our users effectively interact with our the interface.
-									In specific, they would clearly understand what kind of interaction the interface component can produce, and what kind of problems it can solve.
-									For such that target, we have made many attempts, such as removing redundant buttons, to help users reduce the burden of learning the website operations.
-									Besides, the consistency is also our UI design point. For instance, we unified the color style and font of the web app. Breaking this principle will mislead users and cause the web app looks disorderly,
-									which finally leaving a bad impression on our users. 
+									Since our users are clinicians and patients, most of them only have very elementary experience in using computers and do not understand how the web app functions. Therefore, a good UI design is very important here. When we design the UI, we always try to make it simple and clear for the users to effectively interact with the interface. In specific, they would understand how to interact with the components to accomplish a specific action. To achieve this, we have made many attempts, such as removing redundant buttons to reduce confusion for the user. Besides, consistency is also a key point of our UI design. For instance, we unified the colour style and font of the web app. This will eliminate distractions on the UI and give a pleasant feeling to the users.
 								</p>
 								<h3 class="title">Functionalities</h3>
 								<p>
-									Referring to our MoSCoW list and five keywords of our project: 
-									multiple signatures, customizable dashboard, system intelligence, patient treatment history and feedback system,
-									we have tried our best at the back-end side to cover the requirements on MoSCoW list as more as we can and finally we are delighted to see that 
-									we are successful in covering most of them. For more information about the functionalities,
-									please checkout our demo video and go to the Implementation page to figure out what functions are available in this software and how we implemented them.
+									Referring to our MoSCoW list, we have tried our best at the back-end side to cover the requirements on the list as many as we can. We are delighted to see that we are successful in covering most of them. For more information about the functionalities, please check out our demo video and go to the Implementation page to figure out what functions are available in this software and how we implemented them.
 								</p>
 								<h3 class="title">Stability</h3>
 								<p>
-									As long as a bug is not detected, it is potential trouble for users. If the developing team fails to capture and identify the risks of the bugs, they would lead to disasters in some cases.
-									Thus, it is worth to paying attention to detecting bugs, and especially, our web app is supposed to be used in the children hospital, which puts forward higher requirements for the stability of our product.
-									For example, in our earlier version, we didn't validate the user's input, such as, if a user leaves his name with a blank, the server will crash. 
-									This is absolutely unacceptable and this also requires us to conduct testing to our program, test whether the actual results match the expected results and make sure the system is defect free.
-									We adopted automatic testing and we are happy to see that the tests can cover almost all branches of user inputs, which is a solid confirmation that the server will not crash. 
+									Undetected bugs are potential trouble for users. Especially since our web app is supposed to be used in the children hospital, which puts forward higher requirements for the stability of our product, it is worth paying attention to. For example, in our earlier version, we didn't validate the user's input, such as, if a user leaves his name blank, the server will crash. We quickly noticed the issue and conducted thorough testing on our program to find out whether the actual results match the expected results and make sure the system is defect-free. We then confirmed that the server will not crash by adopting automatic testing to check for all possible outcomes by covering each branch.
 								</p>
 								<h3 class="title">Efficiency</h3>
 								<p>
-									The efficiency and performance is kind of non-functional characteristics of software, it is not concerned about if the software has specific functions, but the timeliness of the completion of the function.
-									Since the subject of feeling software performance is our users, for them, performance totally means response time. If there is a slow response or freeze, they don't even care about which is caused by software and which is caused by hardware.
-									But both the objective and subjective factors can affect the feeling about response time, even psychological factors. In our repeated trials, all functionalities responses within 200ms, and this will give our users a very attractive experience. 
+									Efficiency and performance have also been reviewed by us. Even if all the functionalities are working properly, the app should not feel sluggish to the users. These may include stutters or long loading times, which will greatly affect the user experience. We have ensured that there will not be any of them and also kept the response time within 200ms, thus providing a smooth experience for the user.
 								</p>
 								<h3 class="title">Compatibility</h3>
 								<p>
-									Software compatibility is also an important index to measure the quality of software. First, for the compatibility of the operating system, the ideal software should be platform independent.
-									Since the dependencies of our web app contain React, according to the official documentation, React supports most popular browsers, including Internet Explorer 9 and above. 
-									However, it doesn't support older browsers that don't support ES5 methods. Another point is the compatibility of heterogeneous database, for instance, if the user wants to adopt MySql instead of PostgreSQL,
-									he just needs to change few words, like changing 'TIMESTAMP' to 'DATETIME' and then run 'database.sql'.
-									
+									Software compatibility is also an important index to measure the quality of software. First, for the compatibility of the operating system, the ideal software should be platform-independent. Since the dependencies of our web app contain React, according to the official documentation, React supports most popular browsers, including Internet Explorer 9 and above. Another point is the compatibility of the database, for instance, if the user wants to adopt MySql instead of PostgreSQL, he just needs to change few words, like changing 'TIMESTAMP' to 'DATETIME' and then run 'database.sql'.
 								</p>
 								<h3 class="title">Maintainability</h3>
 								<p>
-									In this project, all of our dependencies are open source technology and have official documents. Users can consult relevant technical materials at any time.
-									Meanwhile, During the implementation bit, we also adopted some programming skills to improve the readability of the source code, such as adding documentation.
-									In addition, we comply with the principle of single responsibility to ensure that the code is loosely coupled.
+									In this project, all of our dependencies are open source technology and have official documents. Users can consult relevant technical materials at any time. Meanwhile, during the implementation bit, we also adopted some programming skills to improve the readability of the source code, such as adding documentation. Besides, we comply with the principle of single responsibility to ensure that the code is maintainable.
 								</p>
 								<h3 class="title">Project Management</h3>
 								<P>
-									Offline cooperation becomes basically impossible due to our team members come from different cities in different time zones. 
-									Hence, online cooperation on such a complicated project is a new challenge for us. We decided to use Microsoft Teams for the subsequent meetings and online cooperation. 
-									This is mainly because that MT provides remote meeting rooms that support sharing screens, which greatly improves team cooperation efficiency.<br /><br />
-									In terms of meeting arrangements, we guarantee at least one bi-hours online meeting for each week to discuss our ideas after doing researches, summarize the progress of the last week and 
-									to determine the tasks for the coming new week. During the period we have intensive works, we tend to have a quick half hours meeting every day. 
-									In addition, we also have a meeting with our clients every two weeks to present our project progress and receive reasonable feedback and suggestions from them.
+									Offline cooperation becomes impossible due to our team members come from different cities in different time zones. Hence, online cooperation on such a complicated project is a new challenge for us. We decided to use Microsoft Teams for the subsequent meetings and online cooperation. This is mainly because that MT provides remote meeting rooms that support sharing screens, which greatly improves team cooperation efficiency.
 								</P>
 							</div>
 							<!-- /Post Content -->
@@ -628,18 +606,13 @@
 									<li>
 										<p>
 											<strong>Actual Infusion Pump</strong><br />
-											Since our project this year is online, we have no chance to physically access to the infusion pumps. 
-											We can only rely on our clients' demo videos to imagine how the infusion pumps work, and the clinical data are all simulated with Python files. 
-											If we can work with an actual infusion pump in the future and secure the whole process from collecting data to visualising data on a dashboard is fine, 
-											our work will be more meaningful and helpful to the clinicians.
+											Since our project this year is online, we did not have a chance to physically access the infusion pumps. We can only rely on our clients' demo videos to imagine how the infusion pumps work, and the clinical data are all simulated with Python files. If we can work with an actual infusion pump in the future and secure the whole process from collecting data to visualising data on a dashboard is fine, our work will be more meaningful and helpful to the clinicians.
 										</p>
 									</li>
 									<li>
 										<p>
 											<strong>ML Algorithm</strong><br />
-											Currently, our patient dashboard can only visualise the patient's feed rate and feed energy. Although our work has met the basic requirements, 
-											it still can not be regraded as outstanding in term of functionalities. In the next stage, we will potentially work with Tensorflow on Python 
-											and apply some machine learning algorithms to analyze the patients' target feeds.
+											Currently, our patient dashboard can only visualise the patient's feed rate and feed energy. Although our work has met the essential requirements, we think it should be helpful if the trend can be predicted. In the next stage, we will potentially work with TensorFlow on Python and apply some machine learning algorithms to analyze the patients' target feeds.
 										</p>	
 									</li>
 								</ul>

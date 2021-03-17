@@ -32,10 +32,11 @@
 <!-- Navigation -->
 <nav id="navigation" class="navbar affix">
 
-	<div class="container">
+	<div>
 
 		<div class="row">
-			<div class="col-md-12">
+            <div class="col-md-1"></div>
+			<div class="col-md-9">
 
 				<!-- Navigation Header -->
 				<div class="navbar-header">
@@ -151,13 +152,16 @@
 							</ul>
 						</li>
 
-						<li class="dropdown">
+                        <li class="dropdown">
 							<a href="appendices.html" class="dropdown-toggle">Appendices</a>
 							<ul class="dropdown-menu">
 								<li><a href="appendices.html#supporting-docs">Supporting Docs</a></li>
-                                <li><a href="appendices.html#user-manual">User Manual</a></li>
 								<li><a href="appendices.html#deployment-manual">Deployment Manual</a></li>								
 							</ul>
+						</li>
+
+						<li>
+							<a href="https://comp0016-team6.github.io/user-manual/">User Manual</a>
 						</li>
 					</ul>
 				</div>
@@ -241,9 +245,7 @@
                             <!-- Post Content -->
                             <div class="content">
                                 <p>
-                                    We sketched the initial rough design of the application in Paint 3D. The first version sketches include the home page (navigation), 
-                                    the patient dashboard (infusion pump visualisation graphs with custom graphs), patient information page 
-                                    (treatment plan and personal information), and notifications page (any notes by the clinician or anomalies detected by the system).  
+                                    We sketched the initial rough design of the application in Paint 3D. The first version sketches include the home page (navigation), the patient dashboard (infusion pump visualisation graphs), patient information page (treatment plan and personal information), and notifications page (any notes by the clinician or anomalies detected by the system).
                                 </p>
                                 <p>
                                     First version sketches: 
@@ -264,13 +266,10 @@
                             <!-- Post Content -->
                             <div class="content">
                                 <p>
-                                    After evaluating the sketches and receiving feedback from the users, 
-                                    we decided to go with a simpler design with fewer pages and more compact information. 
-                                    The client prefers this sketch as it is easier to navigate and find details as less buttons are need to be clicked. 
+                                    After evaluating the sketches and receiving feedback from the clients, we decided to go with a simpler design with fewer pages and more compact information. The client prefers this sketch as it is easier to navigate and find details as fewer buttons are needed to be clicked.
                                 </p>
                                 <p>
-                                    We removed the home page, and after a clinician logs in, they see the patients’ dashboards, 
-                                    which can then be clicked and expanded. We believe that this simplistic design aids the usability of the system. 
+                                    We removed the home page so that after a clinician logs in, they immediately see the patients’ dashboards, which can then be clicked and expanded. We believe that this simplistic design aids the usability of the system.
                                 </p>
                                 <p>
                                     Improved sketches of the system: 
@@ -303,9 +302,7 @@
                             <!-- Post Content -->
                             <div class="content">
                                 <p>
-                                    To further evaluate the usability of our sketch, the prototype was designed using Figma. 
-                                    Web pages with key functionalities and requirements are shown below. 
-                                    Arrows represent the transition from one page to another on a particular action. 
+                                    To further evaluate the usability of our sketch, the prototype was designed using Figma. Web pages with key functionalities and requirements are shown below. Arrows represent the transition from one page to another when specific buttons are clicked.
                                 </p>
                             </div>
                             <!-- /Post Content -->
@@ -333,7 +330,7 @@
                             <!-- Post Content -->
                             <div class="content">
                                 <p>
-                                    Heuristic based evaluation was carried out to find flaws and improve the prototype.
+                                    Heuristic based evaluation was carried out to eliminate flaws and improve the prototype.
                                 </p>
                             </div>
                             <!-- /Post Content -->
@@ -361,11 +358,11 @@
                             <!-- Post Content -->
                             <div class="content">
                                 <p>
-                                    The following improvements were made after heuristic based prototype evaluation:
+                                    The following improvements were made after heuristic-based prototype evaluation:
                                 </p>
                                 <ul>
-                                    <li>Search bar – allows users to search patients by names or what they have been diagnosed with.</li>
-                                    <li>Patient details button changed to hyperlink on the name of the patient instead, providing a cleaner UI and bigger space for notifications.</li>
+                                    <li>Search bar – allows users to search patients by names.</li>
+                                    <li>Patient details button – changed to hyperlink on the name of the patient instead, providing a cleaner UI.</li>
                                     <li>Users have the option to change into a list display format in settings to have a better summary of patients’ information.</li>
                                     <li>Sort by option added – users can change the order of the patients displayed. For example, sorting by recent activity will list the patients from most recent to the latest.</li>
                                 </ul>
