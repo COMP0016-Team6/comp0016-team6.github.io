@@ -88,11 +88,11 @@
 							<a href="requirements.html" class="dropdown-toggle">Requirements</a>
 							<ul class="dropdown-menu">
 								<li><a href="requirements.html#project-background">Project Background</a></li>
-                                <li><a href="requirements.html#solution">Solution</a></li>
-                                <li><a href="requirements.html#client-requirements">Client Requirements</a></li>
-                                <li><a href="requirements.html#client-interview">Client Interview</a></li>
-                                <li><a href="requirements.html#persona">Persona</a></li>
-                                <li><a href="requirements.html#moscow-requirements">MoSCoW Requirements</a></li>
+                            <li><a href="requirements.html#solution">Solution</a></li>
+                            <li><a href="requirements.html#client-requirements">Client Requirements</a></li>
+                            <li><a href="requirements.html#user-interview">User Interview</a></li>
+                            <li><a href="requirements.html#persona">Persona</a></li>
+                            <li><a href="requirements.html#moscow-requirements">MoSCoW Requirements</a></li>
 							</ul>
 						</li>
 
@@ -166,10 +166,6 @@
 						<li>
 							<a href="https://comp0016-team6.github.io/Dev-Blog/">Dev Blog</a>
 						</li>
-
-                        <li>
-							<a href="appendices.html#legal-statement">Legal Statement</a>
-						</li>
 					</ul>
 				</div>
 				<!-- /Navigation -->
@@ -225,7 +221,7 @@
                             <li><a href="#project-background" class="smooth-scroll">Project Background</a></li>
                             <li><a href="#solution" class="smooth-scroll">Solution</a></li>
                             <li><a href="#client-requirements" class="smooth-scroll">Client Requirements</a></li>
-                            <li><a href="#client-interview" class="smooth-scroll">Client Interview</a></li>
+                            <li><a href="#user-interview" class="smooth-scroll">User Interview</a></li>
                             <li><a href="#persona" class="smooth-scroll">Persona</a></li>
                             <li><a href="#moscow-requirements" class="smooth-scroll">MoSCoW Requirements</a></li>
                         </ul>
@@ -350,13 +346,13 @@
                         </article>
                     </section>
 
-                    <section id="client-interview" class="section-small">
+                    <section id="user-interview" class="section-small">
                         <!-- Single Post With Image -->
                         <article>
     
                             <!-- Post Title -->
                             <div class="project-information">
-                                <h2 class="title">Client Interview</h2>
+                                <h2 class="title">User Interview</h2>
                             </div>
                             <!-- /Post Title -->
     
@@ -457,16 +453,101 @@
                             <div class="content">
                                 <p>
                                     After we spent some time thinking about different edge-cases, we scheduled a meeting to confirm with our client. With some fine adjustments, we have agreed on this finalised MoSCoW requirements list:
-                                </p> 
-                                <div class="image">
-                                    <a href="img/portfolio/requirements/MoSCoW.PNG" class="image-popup">
-                                        <div class="gallery-image">
-                                            <img src="img/portfolio/requirements/MoSCoW.PNG" />
-                                        </div>
-                                    </a>
-                                </div>
+                                </p>
                             </div>
                             <!-- /Post Content -->
+
+                            <div class="row mt">
+
+                                <!-- Panels -->
+                                <div>
+                    
+                                    <div class="panel-group" id="accordion">
+                    
+                                        <div class="panel panel-theme">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a class="" data-toggle="collapse" href="#moscow-must-have">
+                                                        <strong>Must Have:</strong>
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="moscow-must-have" class="panel-collapse collapse in">
+                                                <div class="panel-body">
+                                                    <ul>
+                                                        <li>Monitor and reliably read live data from infusion pump.</li>
+                                                        <ii>Dashboard for visualising the patient infusion pump data over time.</ii>
+                                                        <li>Types of graphs to choose from on the dashboard, i.e., rate over time, volume over time, etc.</li>
+                                                        <li>Target feed and actual feed comparison on the graph.</li>
+                                                        <li>Secure and reliable authorisation system.</li>
+                                                        <li>Patient information page.</li>
+                                                        <li>Make changes to the patient's treatment plan (Clinician Only).</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="panel panel-theme">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a class="collapsed" data-toggle="collapse" href="#moscow-should-have">
+                                                        <strong>Should Have:</strong>
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="moscow-should-have" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <ul>
+                                                        <li>Assign the supervised patients to the dashboard (Clinician Only).</li>
+                                                        <li>Different visualising methods to choose from.</li>
+                                                        <li>Hover on the point of the graph to see the percentage difference of received and target feed.</li>
+                                                        <li>Filter the data by day, by month, by year and by specific date range.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="panel panel-theme">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a class="collapsed" data-toggle="collapse" href="#moscow-could-have">
+                                                        <strong>Could Have:</strong>
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="moscow-could-have" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <ul>
+                                                        <li>Patients reporting the reasons for large gaps between target and actual feed (Such as "Exercised between 1pm and 2pm", "Low appetite because of XYZ").</li>
+                                                        <li>Clinicians update the records of the patients, example: If a patient did handle Treatment X too well, we can add it to their info page/database,so that if the clinicians change, they have some information to work with.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="panel panel-theme">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a class="collapsed" data-toggle="collapse" href="#moscow-wont-have">
+                                                        <strong>Won't Have:</strong>
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="moscow-wont-have" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <ul>
+                                                        <li>Registration Page - unauthorised people wouldn't be able to register and use the app.</li>
+                                                        <li>Show other patients' information to patients.</li>
+                                                        <li>Change your own treatment plan as a patient.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                    </div>
+                                </div>
+                                <!-- /Panels -->
+                            </div>
                         </article>
                     </section>
 
@@ -533,7 +614,6 @@
 					<li><a href="appendices.html">Appendices</a></li>
                     <li><a href="https://comp0016-team6.github.io/user-manual/">User Manual</a></li>
                     <li><a href="https://comp0016-team6.github.io/Dev-Blog/">Dev Blog</a></li>
-                    <li><a href="appendices.html#legal-statement">Legal Statement</a></li>
 				</ul>
 				<!-- /Footer Menu -->
     
